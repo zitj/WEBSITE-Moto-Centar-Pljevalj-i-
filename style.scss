@@ -1,4 +1,113 @@
-svg{
-    height: 500px;
-    width: 800px;
+$red-gradient:linear-gradient(#d02626, #b01e1e);
+$red-mcp: #d02626;
+$grey-mcp: #888888;
+
+body{
+    margin: 0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background:$red-gradient;
+    height: 70px;
+    nav{
+        display: flex;
+        margin-left:30.4%;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                display: flex;
+                
+                &:nth-of-type(5) a{
+                    background: white;
+                    color: $red-mcp;
+                    &:hover{
+                        opacity: .95;
+                    }
+                    &:active{
+                        opacity: .5;
+                    }
+                  
+                }
+                a{
+                    color: white;
+                    letter-spacing: 1px;
+                    text-decoration: none;
+                    padding: 15px 20px;
+                    text-transform: uppercase;
+                    border-radius: 13px;
+                    margin-right: 20px;
+                    line-height: 10px;
+                    transition: .1s ease-in-out;
+                    &:hover{
+                        background: white;
+                        color: $red-mcp;
+                    }
+                    &:active{
+                        opacity: .9;
+                    }
+                }
+            }
+        }
+    }
+}
+.center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.part1{
+    .motorcycle{
+        height: 300px;
+        width: 600px;
+        margin-top: -2em;
+        margin-bottom: 1em;
+    }
+    h1{
+        margin: 0;
+        &:nth-of-type(1){
+            span{
+            color: $red-mcp;
+            }
+            font-size: 5em;
+        }
+        &:nth-of-type(2){
+            color: $grey-mcp;
+            font-size: 3.5em;
+            margin-top: -8px;
+        }
+    }
+    h4{
+        margin: 10px 0px 25px;
+    }
+    button{
+        padding:10px 15px 10px 30px;
+        font-size: 1.3em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-radius: 30px;
+        outline: none;
+        border: none;
+        background: $red-gradient;
+        color:white;
+        position: relative;
+        cursor: pointer;
+        transition: .1s ease-in-out;
+        &:hover{
+            transform: scale(1.08);
+            box-shadow: 0px 0px 15px 0px #d026268a;
+        }
+        &:active{
+            transform: scale(1);
+            box-shadow: 0px 0px 5px 0px #d026268c;
+        }
+        svg{
+            position: absolute;
+            left: 5%;
+            transform: rotate(-60deg) scale(.8);
+        }
+    }
 }

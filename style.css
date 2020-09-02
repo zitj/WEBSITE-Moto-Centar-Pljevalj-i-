@@ -1,5 +1,144 @@
-svg {
-  height: 500px;
-  width: 800px;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: -webkit-gradient(linear, left top, left bottom, from(#d02626), to(#b01e1e));
+  background: linear-gradient(#d02626, #b01e1e);
+  height: 70px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 30.4%;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul li:nth-of-type(5) a {
+  background: white;
+  color: #d02626;
+}
+
+header nav ul li:nth-of-type(5) a:hover {
+  opacity: .95;
+}
+
+header nav ul li:nth-of-type(5) a:active {
+  opacity: .5;
+}
+
+header nav ul li a {
+  color: white;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  border-radius: 13px;
+  margin-right: 20px;
+  line-height: 10px;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+
+header nav ul li a:hover {
+  background: white;
+  color: #d02626;
+}
+
+header nav ul li a:active {
+  opacity: .9;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.part1 .motorcycle {
+  height: 300px;
+  width: 600px;
+  margin-top: -2em;
+  margin-bottom: 1em;
+}
+
+.part1 h1 {
+  margin: 0;
+}
+
+.part1 h1:nth-of-type(1) {
+  font-size: 5em;
+}
+
+.part1 h1:nth-of-type(1) span {
+  color: #d02626;
+}
+
+.part1 h1:nth-of-type(2) {
+  color: #888888;
+  font-size: 3.5em;
+  margin-top: -8px;
+}
+
+.part1 h4 {
+  margin: 10px 0px 25px;
+}
+
+.part1 button {
+  padding: 10px 15px 10px 30px;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d02626), to(#b01e1e));
+  background: linear-gradient(#d02626, #b01e1e);
+  color: white;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+
+.part1 button:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  -webkit-box-shadow: 0px 0px 15px 0px #d026268a;
+          box-shadow: 0px 0px 15px 0px #d026268a;
+}
+
+.part1 button:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-box-shadow: 0px 0px 5px 0px #d026268c;
+          box-shadow: 0px 0px 5px 0px #d026268c;
+}
+
+.part1 button svg {
+  position: absolute;
+  left: 5%;
+  -webkit-transform: rotate(-60deg) scale(0.8);
+          transform: rotate(-60deg) scale(0.8);
 }
 /*# sourceMappingURL=style.css.map */
