@@ -84,7 +84,6 @@ header nav ul li a:active {
 .part1 .motorcycle {
   height: 300px;
   width: 600px;
-  margin-top: -2em;
   margin-bottom: 1em;
 }
 
@@ -147,12 +146,13 @@ header nav ul li a:active {
 }
 
 .part2 {
-  height: 100vh;
+  height: 90vh;
   position: relative;
 }
 
 .part2 .rotatedContainer {
-  background: #d02626;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d02626), to(#b01e1e));
+  background: linear-gradient(#d02626, #b01e1e);
   height: 200px;
   width: 200px;
   position: relative;
@@ -160,8 +160,8 @@ header nav ul li a:active {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   cursor: pointer;
-  -webkit-box-shadow: -2px -2px 0px 0px #620000;
-          box-shadow: -2px -2px 0px 0px #620000;
+  -webkit-box-shadow: -3px -3px 0px 0px #620000;
+          box-shadow: -3px -3px 0px 0px #620000;
 }
 
 .part2 .rotatedContainer:hover {
@@ -171,21 +171,21 @@ header nav ul li a:active {
 .part2 .rotatedContainer:nth-of-type(2) {
   margin-left: -80%;
   margin-top: -20%;
-  -webkit-box-shadow: -2px 2px 0px 0px #620000;
-          box-shadow: -2px 2px 0px 0px #620000;
+  -webkit-box-shadow: -3px 3px 0px 0px #620000;
+          box-shadow: -3px 3px 0px 0px #620000;
 }
 
 .part2 .rotatedContainer:nth-of-type(3) {
   margin-left: 80%;
   margin-top: -100%;
-  -webkit-box-shadow: 2px -2px 0px 0px #620000;
-          box-shadow: 2px -2px 0px 0px #620000;
+  -webkit-box-shadow: 3px -3px 0px 0px #620000;
+          box-shadow: 3px -3px 0px 0px #620000;
 }
 
 .part2 .rotatedContainer:nth-of-type(4) {
   margin-top: -20%;
-  -webkit-box-shadow: 2px 2px 0px 0px #620000;
-          box-shadow: 2px 2px 0px 0px #620000;
+  -webkit-box-shadow: 3px 3px 0px 0px #620000;
+          box-shadow: 3px 3px 0px 0px #620000;
 }
 
 .part2 .rotatedContainer h2 {
@@ -214,7 +214,7 @@ header nav ul li a:active {
 }
 
 .part3 {
-  height: 100vh;
+  height: 90vh;
   position: relative;
 }
 
@@ -269,5 +269,75 @@ header nav ul li a:active {
   right: -13%;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+.part4 {
+  position: relative;
+  height: 80vh;
+}
+
+.part4 .rotatedContainer {
+  height: 450px;
+  width: 450px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d02626), to(#b01e1e));
+  background: linear-gradient(#d02626, #b01e1e);
+  color: white;
+  border-radius: 16px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-box-shadow: 4px 4px 0px 0px #620000;
+          box-shadow: 4px 4px 0px 0px #620000;
+  position: relative;
+}
+
+.part4 .rotatedContainer h2 {
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  left: -70%;
+  top: 20%;
+  font-size: 6em;
+  opacity: .1;
+  color: black;
+}
+
+.part4 .content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.part4 .content p {
+  letter-spacing: 1px;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.part4 .content p:nth-of-type(2) {
+  font-size: 1.2em;
+}
+
+.part4 .content p:nth-of-type(1), .part4 .content p:nth-of-type(3), .part4 .content p:nth-of-type(4) {
+  margin-bottom: 3px;
+}
+
+.part4 .content p:nth-of-type(2), .part4 .content p:nth-of-type(4), .part4 .content p:nth-of-type(5) {
+  margin-top: 0;
+}
+
+.part4 .content svg {
+  cursor: pointer;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+
+.part4 .content svg:hover {
+  opacity: .8;
+}
+
+.part4 .content svg:active {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
