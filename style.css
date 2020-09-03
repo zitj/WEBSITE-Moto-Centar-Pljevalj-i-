@@ -75,41 +75,96 @@ header nav ul li a:active {
   text-align: center;
 }
 
-.part1 {
-  height: 80vh;
-  width: 100%;
+.close-button {
+  height: 80px;
+  width: 80px;
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  top: 2%;
+}
+
+.gallery,
+.part1,
+.part2,
+.part3,
+.part4 {
+  display: none;
+}
+
+.gallery.active,
+.part1.active,
+.part2.active,
+.part3.active,
+.part4.active {
   display: block;
 }
 
-.part1 .motorcycle {
+.gallery.active {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  position: fixed;
+}
+
+.gallery.active .swiper-container {
+  top: 10%;
+  width: 90%;
+  height: 800px;
+}
+
+.gallery.active .swiper-container img {
+  width: 80%;
+  height: 780px;
+  margin-left: 10%;
+  margin-top: -2%;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.gallery.active .swiper-pagination-bullet {
+  background: #d02626;
+}
+
+.gallery.active .swiper-button-next,
+.gallery.active .swiper-button-prev {
+  color: #d02626;
+}
+
+.part1.active {
+  height: 80vh;
+  width: 100%;
+}
+
+.part1.active .motorcycle {
   height: 300px;
   width: 600px;
   margin-bottom: 1em;
 }
 
-.part1 h1 {
+.part1.active h1 {
   margin: 0;
 }
 
-.part1 h1:nth-of-type(1) {
+.part1.active h1:nth-of-type(1) {
   font-size: 5em;
 }
 
-.part1 h1:nth-of-type(1) span {
+.part1.active h1:nth-of-type(1) span {
   color: #d02626;
 }
 
-.part1 h1:nth-of-type(2) {
+.part1.active h1:nth-of-type(2) {
   color: #888888;
   font-size: 3.5em;
   margin-top: -8px;
 }
 
-.part1 h4 {
+.part1.active h4 {
   margin: 10px 0px 25px;
 }
 
-.part1 button {
+.part1.active button {
   padding: 10px 15px 10px 30px;
   font-size: 1.3em;
   text-transform: uppercase;
@@ -128,17 +183,17 @@ header nav ul li a:active {
           box-shadow: 0px 2px 0px 0px #270101;
 }
 
-.part1 button:hover {
+.part1.active button:hover {
   -webkit-transform: scale(1.07);
           transform: scale(1.07);
 }
 
-.part1 button:active {
+.part1.active button:active {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-.part1 button svg {
+.part1.active button svg {
   position: absolute;
   left: 5%;
   -webkit-transform: rotate(-60deg) scale(0.8);
