@@ -1,7 +1,15 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -34,16 +42,16 @@ header nav ul li {
   display: flex;
 }
 
-header nav ul li:nth-of-type(5) a {
+header nav ul li:nth-of-type(6) a {
   background: white;
   color: #d02626;
 }
 
-header nav ul li:nth-of-type(5) a:hover {
+header nav ul li:nth-of-type(6) a:hover {
   opacity: .95;
 }
 
-header nav ul li:nth-of-type(5) a:active {
+header nav ul li:nth-of-type(6) a:active {
   opacity: .5;
 }
 
@@ -93,6 +101,7 @@ header nav ul li a:active {
 .part4 {
   display: block;
   opacity: 0;
+  height: 95vh;
 }
 
 .part1.active,
@@ -105,19 +114,24 @@ header nav ul li a:active {
 .gallery.active {
   opacity: 0;
   margin-left: -100%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
 .gallery {
   width: 100%;
   height: 100vh;
-  background: white;
   position: fixed;
   display: block;
   opacity: 1;
-  -webkit-transition: .1s ease-in-out;
-  transition: .1s ease-in-out;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
   margin-top: 0%;
   z-index: 19;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
 }
 
 .gallery .swiper-container {
@@ -127,12 +141,16 @@ header nav ul li a:active {
 }
 
 .gallery .swiper-container img {
-  width: 80%;
-  height: 780px;
-  margin-left: 10%;
-  margin-top: -2%;
+  width: 70%;
+  height: 760px;
+  margin-left: 15%;
+  margin-top: -4%;
   cursor: -webkit-grab;
   cursor: grab;
+}
+
+.gallery .swiper-pagination {
+  margin-bottom: 3%;
 }
 
 .gallery .swiper-pagination-bullet {
@@ -144,40 +162,39 @@ header nav ul li a:active {
   color: #d02626;
 }
 
-.part1.active {
-  height: 80vh;
+.part1 {
   width: 100%;
 }
 
-.part1.active .motorcycle {
+.part1 .motorcycle {
   height: 300px;
   width: 600px;
   margin-bottom: 1em;
 }
 
-.part1.active h1 {
+.part1 h1 {
   margin: 0;
 }
 
-.part1.active h1:nth-of-type(1) {
+.part1 h1:nth-of-type(1) {
   font-size: 5em;
 }
 
-.part1.active h1:nth-of-type(1) span {
+.part1 h1:nth-of-type(1) span {
   color: #d02626;
 }
 
-.part1.active h1:nth-of-type(2) {
+.part1 h1:nth-of-type(2) {
   color: #888888;
   font-size: 3.5em;
   margin-top: -8px;
 }
 
-.part1.active h4 {
+.part1 h4 {
   margin: 10px 0px 25px;
 }
 
-.part1.active button {
+.part1 button {
   padding: 10px 15px 10px 30px;
   font-size: 1.3em;
   text-transform: uppercase;
@@ -196,17 +213,21 @@ header nav ul li a:active {
           box-shadow: 0px 2px 0px 0px #270101;
 }
 
-.part1.active button:hover {
+.part1 button:hover {
   -webkit-transform: scale(1.07);
           transform: scale(1.07);
 }
 
-.part1.active button:active {
+.part1 button:active {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-.part1.active button svg {
+.part1 button a {
+  color: white;
+}
+
+.part1 button svg {
   position: absolute;
   left: 5%;
   -webkit-transform: rotate(-60deg) scale(0.8);
@@ -214,7 +235,6 @@ header nav ul li a:active {
 }
 
 .part2 {
-  height: 90vh;
   position: relative;
 }
 
@@ -277,8 +297,8 @@ header nav ul li a:active {
 }
 
 .part3 {
-  height: 90vh;
   position: relative;
+  height: 110vh;
 }
 
 .part3 .rotatedContainer {
@@ -300,6 +320,11 @@ header nav ul li a:active {
   position: absolute;
   top: -20%;
   left: -20%;
+  background: rgba(255, 0, 0, 0.52);
+}
+
+.part3 .content iframe {
+  opacity: .95;
 }
 
 .part3 .text h2 {
@@ -336,7 +361,6 @@ header nav ul li a:active {
 
 .part4 {
   position: relative;
-  height: 80vh;
 }
 
 .part4 .rotatedContainer {

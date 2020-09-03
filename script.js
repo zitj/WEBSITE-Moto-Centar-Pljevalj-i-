@@ -1,5 +1,5 @@
 const navButtons = document.querySelectorAll('a');
-const galleryButton = navButtons[3];
+const galleryButton = navButtons[4];
 const partOne = document.querySelector('.part1');
 const partTwo = document.querySelector('.part2');
 const partThree = document.querySelector('.part3');
@@ -22,6 +22,8 @@ const classAdder = () =>{
     partThree.classList.add('active');
     partFour.classList.add('active');
 }
-
+for(let i=0; i < 4; i++){
+    navButtons[i].addEventListener('click', classAdder);
+}
 galleryButton.addEventListener('click', classRemoval);
 closeButton.addEventListener('click', classAdder);
