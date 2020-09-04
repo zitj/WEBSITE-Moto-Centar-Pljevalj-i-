@@ -240,7 +240,7 @@ header nav ul li a:active {
 @media (max-width: 420px) {
   .center {
     left: 70%;
-    top: 50%;
+    top: 60%;
   }
 }
 
@@ -339,8 +339,8 @@ header nav ul li a:active {
 
 @media (max-width: 420px) {
   .part1 .motorcycle {
-    height: 140px;
-    width: 360px;
+    height: 160px;
+    width: 400px;
   }
 }
 
@@ -364,7 +364,7 @@ header nav ul li a:active {
 
 @media (max-width: 420px) {
   .part1 h1:nth-of-type(1) {
-    font-size: 3.3em;
+    font-size: 3.6em;
   }
 }
 
@@ -376,7 +376,7 @@ header nav ul li a:active {
 
 @media (max-width: 1400px) {
   .part1 h1:nth-of-type(2) {
-    font-size: 3em;
+    font-size: 3.3em;
   }
 }
 
@@ -423,7 +423,7 @@ header nav ul li a:active {
 
 @media (max-width: 420px) {
   .part1 button {
-    font-size: .8em;
+    font-size: 1em;
   }
 }
 
