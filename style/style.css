@@ -21,11 +21,36 @@ header {
   z-index: 20;
 }
 
+@media (max-width: 940px) {
+  header nav.center {
+    width: 80%;
+    left: 53%;
+  }
+}
+
+@media (max-width: 700px) {
+  header nav.center {
+    left: 50%;
+  }
+}
+
+@media (max-width: 560px) {
+  header nav.center {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  header nav.center {
+    top: 305%;
+    left: 49%;
+  }
+}
+
 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 27.4%;
 }
 
 header nav ul {
@@ -34,6 +59,19 @@ header nav ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media (max-width: 420px) {
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: -webkit-gradient(linear, left top, left bottom, from(#b01e1e), to(#d02626));
+    background: linear-gradient(#b01e1e, #d02626);
+    padding: 20px;
+    border-radius: 0px 0px 16px 0px;
+  }
 }
 
 header nav ul li {
@@ -45,6 +83,12 @@ header nav ul li {
 header nav ul li:nth-of-type(6) a {
   background: white;
   color: #d02626;
+}
+
+@media (max-width: 420px) {
+  header nav ul li:nth-of-type(6) a {
+    display: none;
+  }
 }
 
 header nav ul li:nth-of-type(6) a:hover {
@@ -66,6 +110,112 @@ header nav ul li a {
   line-height: 10px;
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
+}
+
+@media (max-width: 1740px) {
+  header nav ul li a {
+    padding: 15px 15px;
+  }
+}
+
+@media (max-width: 1620px) {
+  header nav ul li a {
+    padding: 14px 10px;
+  }
+}
+
+@media (max-width: 1493px) {
+  header nav ul li a {
+    padding: 14px 5px;
+  }
+}
+
+@media (max-width: 1375px) {
+  header nav ul li a {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 1320px) {
+  header nav ul li a {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 1260px) {
+  header nav ul li a {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 1200px) {
+  header nav ul li a {
+    font-size: .9em;
+  }
+}
+
+@media (max-width: 1110px) {
+  header nav ul li a {
+    font-size: .8em;
+  }
+}
+
+@media (max-width: 1030px) {
+  header nav ul li a {
+    font-size: .7em;
+  }
+}
+
+@media (max-width: 940px) {
+  header nav ul li a {
+    font-size: .9em;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 880px) {
+  header nav ul li a {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 810px) {
+  header nav ul li a {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 660px) {
+  header nav ul li a {
+    font-size: .8em;
+  }
+}
+
+@media (max-width: 560px) {
+  header nav ul li a {
+    font-size: .9em;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 490px) {
+  header nav ul li a {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 430px) {
+  header nav ul li a {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  header nav ul li a {
+    font-size: 1em;
+    padding: 20px;
+    margin-right: 0;
+  }
 }
 
 header nav ul li a:hover {
