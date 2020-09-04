@@ -4,6 +4,9 @@ $red-gradient-reverse:linear-gradient(#b01e1e, #d02626);
 $red-mcp: #d02626;
 $grey-mcp: #888888;
 $shadow:#270101;
+html, body {
+    max-width: 100%;
+}
 html {
     scroll-behavior: smooth;
   }
