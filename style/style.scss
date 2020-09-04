@@ -15,13 +15,13 @@ body{
 a{
     text-decoration: none;
 }
+
 header{
     position:fixed;
     background:$red-gradient;
     height: 70px;
     width: 100%;
     z-index: 20;
-  
   
    nav.center{
     @media (max-width: 940px) {
@@ -46,6 +46,7 @@ header{
             display: flex;
             flex-wrap: wrap;
             @media (max-width: 420px){
+                display: none;
                 flex-direction: column;
                 background: $red-gradient-reverse;
                 padding: 20px;
@@ -155,6 +156,11 @@ header{
     top: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+    @media (max-width: 420px) {
+        left:62%;
+        top:50%;
+     }
+  
 }
 .close-button{
     height: 80px;
@@ -223,11 +229,20 @@ header{
 .part1{
     
     width: 100%;
+  
     .motorcycle{
         height: 300px;
         width: 600px;
         margin-bottom: 1em;
+        @media (max-width: 1400px) {
+        height: 200px;
+        width:500px;
+    }
+        @media (max-width: 420px) {
+        height: 140px;
+        width:360px;
         
+    }
     }
     h1{
         margin: 0;
@@ -236,15 +251,30 @@ header{
             color: $red-mcp;
             }
             font-size: 5em;
+            @media (max-width: 1400px) {
+                font-size: 4em;
+            }
+            @media (max-width: 420px) {
+               font-size: 3.3em;
+            }
         }
         &:nth-of-type(2){
             color: $grey-mcp;
             font-size: 3.5em;
             margin-top: -8px;
+            @media (max-width: 1400px) {
+            font-size: 3em;
+            }
+            @media (max-width: 420px) {
+                font-size: 2.2em;
+             }
         }
     }
     h4{
         margin: 10px 0px 25px;
+        @media (max-width: 420px) {
+            font-size: .8em;
+         }
     }
     button{
         padding:10px 15px 10px 30px;
@@ -260,6 +290,12 @@ header{
         cursor: pointer;
         transition: .1s ease-in-out;
         box-shadow: 0px 2px 0px 0px $shadow;
+        @media (max-width: 1400px) {
+            font-size: 1em;
+            }
+        @media (max-width: 420px) {
+            font-size: .8em;
+            }
         &:hover{
             transform: scale(1.07);
         }
@@ -273,6 +309,9 @@ header{
             position: absolute;
             left: 5%;
             transform: rotate(-60deg) scale(.8);
+            @media (max-width: 1400px) {
+                top: 19%;
+                }
         }
     }
 }
@@ -288,6 +327,14 @@ header{
         border-radius: 13px;
         transform: rotate(45deg);
         box-shadow: -3px -3px 0px 0px #620000;
+        @media (max-width: 1400px) {
+            height: 160px;
+            width: 160px;
+            }
+        @media (max-width: 420px) {
+            height: 140px;
+            width: 140px;
+            }
         &:nth-of-type(2){
             margin-left: -80%;
             margin-top: -20%;
@@ -309,7 +356,12 @@ header{
             top: 40%;
             font-size: 6em;
             opacity: .1;
-
+            @media (max-width: 1400px) {
+                font-size: 5em;
+                }
+            @media (max-width: 420px) {
+                font-size: 4.3em;
+                }
         }
         .content{
             top: 50%;
@@ -321,6 +373,19 @@ header{
                 text-transform: uppercase;
                 margin:5px 0 0 0;
                 letter-spacing: 1px;
+                @media (max-width: 1400px) {
+                    font-size: .8em;
+                    }
+            }
+            svg{
+                @media (max-width: 1400px) {
+                    height: 80px;
+                    width: 80px;
+                    }
+                @media (max-width: 1400px) {
+                    height: 64px;
+                    width: 64px;
+                    }
             }
         }
     }
@@ -338,6 +403,14 @@ header{
         transform: rotate(45deg);
         box-shadow: 3px 3px 0px 0px #620000;
         overflow: hidden;
+        @media (max-width: 1400px) {
+            height: 370px;
+            width: 370px;
+            }
+        @media (max-width: 420px) {
+            height: 310px;
+            width: 310px;
+            }
     }
     .content{
         transform: rotate(-45deg);
@@ -345,6 +418,12 @@ header{
         top: -20%;
         left: -20%;
         background: rgba(255, 0, 0, 0.52);
+        @media (max-width: 1400px) {
+            top: -30%;
+            }
+        @media (max-width: 420px) {
+            top: -40%;
+            }
         iframe{
             opacity: .95;
         }
@@ -358,13 +437,25 @@ header{
             left: 46%;
             opacity: .2;
             transform: rotate(45deg);
+            @media (max-width: 1400px) {
+                font-size: 4.5em;
+                }
+            @media (max-width: 420px) {
+                font-size: 3.58em;
+                }
+                
         }
         p{
             font-size: 1.6em;
             color: $red-mcp;
             font-weight: bold;
             position: absolute;
-
+            @media (max-width: 1400px) {
+                font-size: 1.3em;
+                }
+            @media (max-width: 420px) {
+                font-size: 1.1em;
+                }
             &:nth-of-type(1){
             top:2%;
             left: -33%;
@@ -392,6 +483,14 @@ header{
         transform: rotate(45deg);
         box-shadow: 4px 4px 0px 0px #620000;
         position: relative;
+        @media (max-width: 1400px) {
+            height: 370px;
+            width: 370px;
+            }
+        @media (max-width: 420px) {
+            height: 310px;
+            width: 310px;
+            }
         h2{
             position: absolute;
             transform: rotate(-90deg);
@@ -400,6 +499,14 @@ header{
             font-size: 6em;
             opacity: .1;
             color: black;
+            @media (max-width: 1400px) {
+                font-size: 5em;
+                left: -68%;
+                }
+            @media (max-width: 420px) {
+                font-size: 4em;
+                left: -62%;
+                }
         }
     }
     .content{
@@ -426,6 +533,13 @@ header{
             &:nth-of-type(4),
             &:nth-of-type(5){
                 margin-top: 0;
+            }
+            &:nth-of-type(3),
+            &:nth-of-type(4),
+            &:nth-of-type(5){
+                @media (max-width: 420px) {
+                    font-size: 1.1em;
+                    }
             }
         }
         svg{
