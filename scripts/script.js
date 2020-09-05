@@ -28,12 +28,12 @@ for(let i=0; i < 4; i++){
 galleryButton.addEventListener('click', classRemoval);
 closeButton.addEventListener('click', classAdder);
 
-// const buttonAppearance = ()=>{
-//     if(window.scrollY > 300){
-//         callButton.classList.add('active');
-//     }
-//     else{
-//         callButton.classList.remove('active');
-//     }
-// };
-// window.onscroll = ()=> {buttonAppearance()};
+const buttonAppearance = ()=>{
+    if(window.scrollY > 300){
+        callButton.classList.add('active');
+    }
+    else{
+        callButton.classList.remove('active');
+    }
+};
+window.onscroll = ()=> {buttonAppearance()};
