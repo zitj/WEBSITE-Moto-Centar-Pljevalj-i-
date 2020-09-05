@@ -29,7 +29,7 @@ galleryButton.addEventListener('click', classRemoval);
 closeButton.addEventListener('click', classAdder);
 
 const buttonAppearance = ()=>{
-    if(window.scrollY > 300){
+    if(window.scrollY > 300 || document.documentElement.scrollY > 300){
         callButton.classList.add('active');
     }
     else{
