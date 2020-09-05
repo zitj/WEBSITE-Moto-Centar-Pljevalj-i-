@@ -31,11 +31,9 @@ closeButton.addEventListener('click', classAdder);
 const buttonAppearance = ()=>{
     if(window.scrollY > 300 || document.documentElement.scrollY > 300){
         callButton.style.opacity = 1;
-        callButton.style.transform = "scale(1)";
     }
     else{
         callButton.style.opacity = 0;
-        callButton.style.transform = "scale(0)";
     }
 };
 window.onscroll = ()=> {buttonAppearance()};
