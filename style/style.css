@@ -21,7 +21,6 @@ a {
   bottom: 5%;
   right: 5%;
   display: none;
-  opacity: 0;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
   z-index: 100;
@@ -45,12 +44,14 @@ a {
 
 @media (max-width: 420px) {
   .call-button {
-    display: block;
+    display: none;
   }
 }
 
-.call-button.active {
-  opacity: 1;
+@media (max-width: 420px) {
+  .call-button.active {
+    display: block;
+  }
 }
 
 header {
