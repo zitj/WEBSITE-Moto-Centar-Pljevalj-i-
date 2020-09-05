@@ -6,7 +6,7 @@ const partThree = document.querySelector('.part3');
 const partFour = document.querySelector('.part4');
 const gallery = document.querySelector('.gallery');
 const closeButton = document.querySelector('.close-button');
-
+const callButton = document.querySelector('.call-button');
 
 const classRemoval = () =>{
     gallery.classList.remove('active');
@@ -27,3 +27,13 @@ for(let i=0; i < 4; i++){
 }
 galleryButton.addEventListener('click', classRemoval);
 closeButton.addEventListener('click', classAdder);
+
+const buttonAppearance = ()=>{
+    if(window.scrollY > 300){
+        callButton.classList.add('active');
+    }
+    else{
+        callButton.classList.remove('active');
+    }
+};
+window.onscroll = ()=> {buttonAppearance()};

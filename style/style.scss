@@ -18,14 +18,40 @@ body{
 a{
     text-decoration: none;
 }
-
+.call-button{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    display: none;
+    opacity: 0;
+    transform: scale(0);
+    transition: .3s ease-in-out;
+    button{
+        background: $red-gradient;
+        outline: none;
+        border: none;
+        padding: 15px;
+        border-radius: 50%;
+        box-shadow: 0px 2px 0px 0px black;
+        svg{
+            transform: rotate(-60deg);
+        }
+    }
+    @media (max-width: 420px){
+        display: block;
+        } 
+}
+.call-button.active{
+    opacity: 1;
+    transform: scale(1);
+}
 header{
     position:fixed;
     background:$red-gradient;
     height: 70px;
     width: 100%;
     z-index: 20;
-  
+
    nav.center{
     @media (max-width: 940px) {
         width: 80%;
@@ -38,8 +64,8 @@ header{
         width: 100%;
         }
     @media (max-width: 420px){
-        top: 305%;
-        left: 49%;
+        left: 47%;
+        top: 50%;
         }   
    }
     nav{
@@ -48,23 +74,19 @@ header{
         ul{
             display: flex;
             flex-wrap: wrap;
-            @media (max-width: 420px){
-                display: none;
-                flex-direction: column;
-                background: $red-gradient-reverse;
-                padding: 20px;
-                border-radius: 0px 0px 16px 0px;
-                
-                }
+       
             li{
                 display: flex;
-               
-                &:nth-of-type(6) a{
-                    background: white;
-                    color: $red-mcp;
+                &:nth-of-type(1),
+                &:nth-of-type(2){
                     @media (max-width: 420px){
                         display: none;                        
                         }
+                }
+                &:nth-of-type(6) a{
+                    background: white;
+                    color: $red-mcp;
+                 
                     &:hover{
                         opacity: .95;
                     }
@@ -313,6 +335,9 @@ header{
             transform: rotate(-60deg) scale(.8);
             @media (max-width: 1400px) {
                 top: 19%;
+                }
+            @media (max-width: 420px) {
+                top: 24%;
                 }
         }
     }

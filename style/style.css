@@ -16,6 +16,46 @@ a {
   text-decoration: none;
 }
 
+.call-button {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  display: none;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.call-button button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#d02626), to(#b01e1e));
+  background: linear-gradient(#d02626, #b01e1e);
+  outline: none;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 2px 0px 0px black;
+          box-shadow: 0px 2px 0px 0px black;
+}
+
+.call-button button svg {
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+}
+
+@media (max-width: 420px) {
+  .call-button {
+    display: block;
+  }
+}
+
+.call-button.active {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 header {
   position: fixed;
   background: -webkit-gradient(linear, left top, left bottom, from(#d02626), to(#b01e1e));
@@ -46,8 +86,8 @@ header {
 
 @media (max-width: 420px) {
   header nav.center {
-    top: 305%;
-    left: 49%;
+    left: 47%;
+    top: 50%;
   }
 }
 
@@ -65,35 +105,21 @@ header nav ul {
       flex-wrap: wrap;
 }
 
-@media (max-width: 420px) {
-  header nav ul {
-    display: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background: -webkit-gradient(linear, left top, left bottom, from(#b01e1e), to(#d02626));
-    background: linear-gradient(#b01e1e, #d02626);
-    padding: 20px;
-    border-radius: 0px 0px 16px 0px;
-  }
-}
-
 header nav ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+@media (max-width: 420px) {
+  header nav ul li:nth-of-type(1), header nav ul li:nth-of-type(2) {
+    display: none;
+  }
+}
+
 header nav ul li:nth-of-type(6) a {
   background: white;
   color: #d02626;
-}
-
-@media (max-width: 420px) {
-  header nav ul li:nth-of-type(6) a {
-    display: none;
-  }
 }
 
 header nav ul li:nth-of-type(6) a:hover {
@@ -437,6 +463,12 @@ header nav ul li a:active {
 @media (max-width: 1400px) {
   .part1 button svg {
     top: 19%;
+  }
+}
+
+@media (max-width: 420px) {
+  .part1 button svg {
+    top: 24%;
   }
 }
 
