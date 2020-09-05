@@ -26,6 +26,7 @@ a{
     opacity: 0;
     // transform: scale(0);
     transition: .3s ease-in-out;
+    z-index: 100;
     button{
         background: $red-gradient;
         outline: none;

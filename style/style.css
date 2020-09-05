@@ -24,6 +24,7 @@ a {
   opacity: 0;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
+  z-index: 100;
 }
 
 .call-button button {
