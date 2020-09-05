@@ -30,10 +30,10 @@ closeButton.addEventListener('click', classAdder);
 
 const buttonAppearance = ()=>{
     if(window.scrollY > 300 || document.documentElement.scrollY > 300){
-        callButton.classList.add('active');
+        callButton.style.opacity = 1;
     }
     else{
-        callButton.classList.remove('active');
+        callButton.style.opacity = 0;
     }
 };
 window.onscroll = ()=> {buttonAppearance()};
