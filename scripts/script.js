@@ -22,7 +22,7 @@ const classAdder = () =>{
     partThree.classList.add('active');
     partFour.classList.add('active');
 }
-for(let i=0; i < 4; i++){
+for(let i=0; i < navButtons.length; i++){
     navButtons[i].addEventListener('click', classAdder);
 }
 galleryButton.addEventListener('click', classRemoval);
