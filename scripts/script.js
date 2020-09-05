@@ -1,5 +1,5 @@
 const navButtons = document.querySelectorAll('a');
-const galleryButton = navButtons[4];
+const galleryButton = document.getElementById('galleryButton');
 const partOne = document.querySelector('.part1');
 const partTwo = document.querySelector('.part2');
 const partThree = document.querySelector('.part3');
