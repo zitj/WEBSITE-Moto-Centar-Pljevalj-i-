@@ -242,6 +242,12 @@ header nav ul li a {
   }
 }
 
+@media (max-width: 320px) {
+  header nav ul li a {
+    padding: 15px;
+  }
+}
+
 header nav ul li a:hover {
   background: white;
   color: #d02626;
@@ -263,6 +269,13 @@ header nav ul li a:active {
 @media (max-width: 420px) {
   .center {
     left: 70%;
+    top: 65%;
+  }
+}
+
+@media (max-width: 320px) {
+  .center {
+    left: 75%;
     top: 65%;
   }
 }
