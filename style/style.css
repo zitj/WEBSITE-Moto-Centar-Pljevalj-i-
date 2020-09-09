@@ -16,39 +16,6 @@ a {
   text-decoration: none;
 }
 
-.call-button {
-  position: fixed;
-  bottom: 5%;
-  right: 5%;
-  display: none;
-  opacity: 0;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-  z-index: 100;
-}
-
-.call-button button {
-  background: -webkit-gradient(linear, left top, left bottom, from(#d02626), to(#b01e1e));
-  background: linear-gradient(#d02626, #b01e1e);
-  outline: none;
-  border: none;
-  padding: 15px;
-  border-radius: 50%;
-  -webkit-box-shadow: 0px 2px 0px 0px black;
-          box-shadow: 0px 2px 0px 0px black;
-}
-
-.call-button button svg {
-  -webkit-transform: rotate(-60deg);
-          transform: rotate(-60deg);
-}
-
-@media (max-width: 420px) {
-  .call-button {
-    display: block;
-  }
-}
-
 header {
   position: fixed;
   background: -webkit-gradient(linear, left top, left bottom, from(#d02626), to(#b01e1e));
