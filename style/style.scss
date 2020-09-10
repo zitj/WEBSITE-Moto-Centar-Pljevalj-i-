@@ -43,11 +43,10 @@ header{
    }
     nav{
         display: flex;
-        
         ul{
             display: flex;
             flex-wrap: wrap;
-       
+            
             li{
                 display: flex;
                 &:nth-of-type(1),
@@ -125,8 +124,14 @@ header{
                         font-size: .9em;
                         margin-right: 20px;
                             }
+                        @media (max-width: 540px) { 
+                        margin-right: 10px;
+                            }
                         @media (max-width: 490px) { 
                         margin-right: 15px;
+                            }
+                        @media (max-width: 480px) { 
+                        margin-right: 4px;
                             }
                         @media (max-width: 430px) {
                         margin-right: 10px;
@@ -134,10 +139,25 @@ header{
                         @media (max-width: 420px) {
                         font-size:1em;
                         padding: 20px;
-                        margin-right: 0;
+                        margin-right: 6px;
                             }
+                        @media (max-width: 390px) {
+                        margin-right: 0px;
+                        }
+                        @media (max-width: 375px) {
+                        padding: 19px;
+                        margin-right: 3px;
+                        }
+                        @media (max-width: 360px) {
+                        padding: 18px;
+                        margin-right: 2px;
+                        }
                         @media (max-width: 320px) {
                         padding: 15px;
+                        }
+                        @media (max-width: 280px) {
+                        margin-right: 3px;
+                        padding: 14px 12px;
                         }
                         
                    
@@ -182,14 +202,16 @@ header{
         top: 10%;
         right:10%;
      }
+    @media (max-width: 800px) {
+        top: 16%;
+        right:10%;
+     }
     @media (max-width: 600px) {
         top: 22%;
-        right: 8%;
+        right: 2%;
         transform: scale(.8);
      }
-    @media (max-width: 600px) {
-        top:25%;
-     }
+    
 }
 .part1,
 .part2,
@@ -233,12 +255,14 @@ header{
         @media (max-width: 900px) {
             height:450px;
         }
+        @media (max-width: 800px) {
+            top: 25%;
+        }
         @media (max-width: 600px) {
-            height:300px;
+            height:430px;
             top: 30%;
         }
         @media (max-width: 420px) {
-            
             top: 40%;
         }
         img{
@@ -255,8 +279,10 @@ header{
                 height:400px;
             }
             @media (max-width: 600px) {
-                height:280px;
+                height:380px;
+                width: 100%;
                 margin-top: 0;
+                margin-left: 0%;
             }
         }
         
@@ -264,7 +290,7 @@ header{
     .swiper-pagination{
         margin-bottom: 3%;
         @media (max-width: 600px) {
-            margin-bottom: -3%;
+            margin-bottom: 0%;
         }
     }
     .swiper-pagination-bullet{
