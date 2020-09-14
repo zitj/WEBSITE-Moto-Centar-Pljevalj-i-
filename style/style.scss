@@ -1,9 +1,7 @@
 @import "include-media.scss"; 
-$red-gradient:linear-gradient(#d02626, #b01e1e);
-$red-gradient-reverse:linear-gradient(#b01e1e, #d02626);
-$red-mcp: #d02626;
-$grey-mcp: #888888;
-$shadow:#270101;
+@import "./mixins";
+@import "./variables";
+
 html, body {
     max-width: 100%;
 }
@@ -37,36 +35,14 @@ header{
         width: 100%;
         }
     @media (max-width: 420px){
-        left: 47%;
+        left: 50%;
         top: 50%;
         }   
    }
     nav{
+        width:40%;
         display: flex;
-        ul{
-            display: flex;
-            flex-wrap: wrap;
-            
-            li{
-                display: flex;
-                &:nth-of-type(1),
-                &:nth-of-type(2){
-                    @media (max-width: 420px){
-                        display: none;                        
-                        }
-                }
-                &:nth-of-type(6) a{
-                    background: white;
-                    color: $red-mcp;
-                 
-                    &:hover{
-                        opacity: .95;
-                    }
-                    &:active{
-                        opacity: .5;
-                    }
-                  
-                }
+        justify-content: space-around;
                 a{
                     color: white;
                     letter-spacing: 1px;
@@ -74,93 +50,11 @@ header{
                     padding: 15px 20px;
                     text-transform: uppercase;
                     border-radius: 13px;
-                    margin-right: 20px;
                     line-height: 10px;
                     transition: .1s ease-in-out;
-                    @media (max-width: 1740px) {
-                        padding: 15px 15px;
+                    @media (max-width: 420px) {
+                        padding: 15px 10px;
                         }
-                    @media (max-width: 1620px) {
-                        padding: 14px 10px;
-                        }
-                    @media (max-width: 1493px) {
-                        padding: 14px 5px;
-                        }
-                    @media (max-width: 1375px) {
-                        margin-right: 15px;
-                        }
-                    @media (max-width: 1320px) {
-                        margin-right: 10px;
-                        }
-                    @media (max-width: 1260px) {
-                        margin-right: 5px;
-                        }
-                    @media (max-width: 1200px) {
-                        font-size: .9em;
-                        }
-                    @media (max-width: 1110px) {
-                        font-size: .8em;
-                        }
-                    @media (max-width: 1030px) {
-                        font-size: .7em;
-                        }
-                        @media (max-width: 940px) {
-                        font-size: .9em;
-                        margin-right: 30px;
-                            }
-                        @media (max-width: 880px) {
-                        margin-right: 20px;
-                            }
-                        @media (max-width: 810px) {
-                        margin-right: 10px;
-                            }
-                        @media (max-width: 660px) {
-                        font-size: .8em;
-                            }
-                        @media (max-width: 600px) {
-                        margin-right: 3px;
-                            }
-                        @media (max-width: 560px) {
-                        font-size: .9em;
-                        margin-right: 20px;
-                            }
-                        @media (max-width: 540px) { 
-                        margin-right: 10px;
-                            }
-                        @media (max-width: 490px) { 
-                        margin-right: 15px;
-                            }
-                        @media (max-width: 480px) { 
-                        margin-right: 4px;
-                            }
-                        @media (max-width: 430px) {
-                        margin-right: 10px;
-                            }
-                        @media (max-width: 420px) {
-                        font-size:1em;
-                        padding: 20px;
-                        margin-right: 6px;
-                            }
-                        @media (max-width: 390px) {
-                        margin-right: 0px;
-                        }
-                        @media (max-width: 375px) {
-                        padding: 19px;
-                        margin-right: 3px;
-                        }
-                        @media (max-width: 360px) {
-                        padding: 18px;
-                        margin-right: 2px;
-                        }
-                        @media (max-width: 320px) {
-                        padding: 15px;
-                        }
-                        @media (max-width: 280px) {
-                        margin-right: 3px;
-                        padding: 14px 12px;
-                        }
-                        
-                   
                     &:hover{
                         background: white;
                         color: $red-mcp;
@@ -171,13 +65,8 @@ header{
                 }
             }
         }
-    }
-}
 .center{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    @include centering(rotate(0deg));
     text-align: center;
     @media (max-width: 420px) {
         left:70%;
@@ -265,9 +154,11 @@ header{
         @media (max-width: 420px) {
             top: 40%;
         }
+      
+       
         img{
             width: 70%;
-            height: 760px;
+            height:720px;
             margin-left: 15%;
             margin-top: -4%;
             cursor: grab;
@@ -329,9 +220,6 @@ header{
             @media (max-width: 1400px) {
                 font-size: 4em;
             }
-            // @media (max-width: 420px) {
-            //    font-size: 3.6em;
-            // }
         }
         &:nth-of-type(2){
             color: $grey-mcp;
@@ -340,16 +228,10 @@ header{
             @media (max-width: 1400px) {
             font-size: 3.3em;
             }
-            // @media (max-width: 420px) {
-            //     font-size: 2.2em;
-            //  }
         }
     }
     h4{
         margin: 10px 0px 25px;
-        // @media (max-width: 420px) {
-        //     font-size: .8em;
-        //  }
     }
     button{
         padding:10px 15px 10px 30px;
@@ -394,17 +276,9 @@ header{
     }
 }
 .part2{
-   
     position: relative;
-    
     .rotatedContainer{
-        background: $red-gradient;
-        height: 200px;
-        width: 200px;
-        position: relative;
-        border-radius: 13px;
-        transform: rotate(45deg);
-        box-shadow: -3px -3px 0px 0px #620000;
+        @include rotatedContainerMixin(13px, 200px, 200px, -3px);
         @media (max-width: 1400px) {
             height: 160px;
             width: 160px;
@@ -416,16 +290,16 @@ header{
         &:nth-of-type(2){
             margin-left: -80%;
             margin-top: -20%;
-            box-shadow: -3px 3px 0px 0px #620000;
+            box-shadow: -3px 3px 0px 0px$burgendy-shadow;
         }
         &:nth-of-type(3){
            margin-left: 80%;
            margin-top: -100%;
-           box-shadow: 3px -3px 0px 0px #620000;
+           box-shadow: 3px -3px 0px 0px $burgendy-shadow;
         }
         &:nth-of-type(4){
            margin-top: -20%;
-           box-shadow: 3px 3px 0px 0px #620000;
+           box-shadow: 3px 3px 0px 0px $burgendy-shadow;
         }
         h2{
             position: absolute;
@@ -442,10 +316,7 @@ header{
                 }
         }
         .content{
-            top: 50%;
-            left: 50%;
-            position: absolute;
-            transform: translate(-50%,-50%) rotate(-45deg);
+            @include centering(rotate(-45deg));
             p{
                 color: white;
                 text-transform: uppercase;
@@ -473,13 +344,8 @@ header{
     position: relative;
     height: 110vh;
     .rotatedContainer{
-        background: $shadow;
-        height: 450px;
-        width: 450px;
-        border-radius: 16px;
-        position: relative;
-        transform: rotate(45deg);
-        box-shadow: 3px 3px 0px 0px #620000;
+        @include rotatedContainerMixin(16px, 450px, 450px, 3px);
+        background: $burgendy-shadow;
         overflow: hidden;
         @media (max-width: 1400px) {
             height: 370px;
@@ -552,14 +418,8 @@ header{
 .part4{
     position: relative;
     .rotatedContainer{
-        height: 450px;
-        width: 450px;
-        background: $red-gradient;
+        @include rotatedContainerMixin(16px, 450px, 450px, 4px);
         color: white;
-        border-radius: 16px;
-        transform: rotate(45deg);
-        box-shadow: 4px 4px 0px 0px #620000;
-        position: relative;
         @media (max-width: 1400px) {
             height: 370px;
             width: 370px;
@@ -588,12 +448,7 @@ header{
         }
     }
     .content{
-        position: absolute;
-        
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%) rotate(-45deg);
-       
+        @include centering(rotate(-45deg));
         p{
             letter-spacing: 1px;
             font-size: 1.4em;

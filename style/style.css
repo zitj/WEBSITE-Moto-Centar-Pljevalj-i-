@@ -46,235 +46,53 @@ header {
 
 @media (max-width: 420px) {
   header nav.center {
-    left: 47%;
+    left: 50%;
     top: 50%;
   }
 }
 
 header nav {
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-header nav ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media (max-width: 420px) {
-  header nav ul li:nth-of-type(1), header nav ul li:nth-of-type(2) {
-    display: none;
-  }
-}
-
-header nav ul li:nth-of-type(6) a {
-  background: white;
-  color: #d02626;
-}
-
-header nav ul li:nth-of-type(6) a:hover {
-  opacity: .95;
-}
-
-header nav ul li:nth-of-type(6) a:active {
-  opacity: .5;
-}
-
-header nav ul li a {
+header nav a {
   color: white;
   letter-spacing: 1px;
   text-decoration: none;
   padding: 15px 20px;
   text-transform: uppercase;
   border-radius: 13px;
-  margin-right: 20px;
   line-height: 10px;
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
 }
 
-@media (max-width: 1740px) {
-  header nav ul li a {
-    padding: 15px 15px;
-  }
-}
-
-@media (max-width: 1620px) {
-  header nav ul li a {
-    padding: 14px 10px;
-  }
-}
-
-@media (max-width: 1493px) {
-  header nav ul li a {
-    padding: 14px 5px;
-  }
-}
-
-@media (max-width: 1375px) {
-  header nav ul li a {
-    margin-right: 15px;
-  }
-}
-
-@media (max-width: 1320px) {
-  header nav ul li a {
-    margin-right: 10px;
-  }
-}
-
-@media (max-width: 1260px) {
-  header nav ul li a {
-    margin-right: 5px;
-  }
-}
-
-@media (max-width: 1200px) {
-  header nav ul li a {
-    font-size: .9em;
-  }
-}
-
-@media (max-width: 1110px) {
-  header nav ul li a {
-    font-size: .8em;
-  }
-}
-
-@media (max-width: 1030px) {
-  header nav ul li a {
-    font-size: .7em;
-  }
-}
-
-@media (max-width: 940px) {
-  header nav ul li a {
-    font-size: .9em;
-    margin-right: 30px;
-  }
-}
-
-@media (max-width: 880px) {
-  header nav ul li a {
-    margin-right: 20px;
-  }
-}
-
-@media (max-width: 810px) {
-  header nav ul li a {
-    margin-right: 10px;
-  }
-}
-
-@media (max-width: 660px) {
-  header nav ul li a {
-    font-size: .8em;
-  }
-}
-
-@media (max-width: 600px) {
-  header nav ul li a {
-    margin-right: 3px;
-  }
-}
-
-@media (max-width: 560px) {
-  header nav ul li a {
-    font-size: .9em;
-    margin-right: 20px;
-  }
-}
-
-@media (max-width: 540px) {
-  header nav ul li a {
-    margin-right: 10px;
-  }
-}
-
-@media (max-width: 490px) {
-  header nav ul li a {
-    margin-right: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  header nav ul li a {
-    margin-right: 4px;
-  }
-}
-
-@media (max-width: 430px) {
-  header nav ul li a {
-    margin-right: 10px;
-  }
-}
-
 @media (max-width: 420px) {
-  header nav ul li a {
-    font-size: 1em;
-    padding: 20px;
-    margin-right: 6px;
+  header nav a {
+    padding: 15px 10px;
   }
 }
 
-@media (max-width: 390px) {
-  header nav ul li a {
-    margin-right: 0px;
-  }
-}
-
-@media (max-width: 375px) {
-  header nav ul li a {
-    padding: 19px;
-    margin-right: 3px;
-  }
-}
-
-@media (max-width: 360px) {
-  header nav ul li a {
-    padding: 18px;
-    margin-right: 2px;
-  }
-}
-
-@media (max-width: 320px) {
-  header nav ul li a {
-    padding: 15px;
-  }
-}
-
-@media (max-width: 280px) {
-  header nav ul li a {
-    margin-right: 3px;
-    padding: 14px 12px;
-  }
-}
-
-header nav ul li a:hover {
+header nav a:hover {
   background: white;
   color: #d02626;
 }
 
-header nav ul li a:active {
+header nav a:active {
   opacity: .9;
 }
 
 .center {
-  position: absolute;
-  left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+          transform: translate(-50%, -50%) rotate(0deg);
+  position: absolute;
   text-align: center;
 }
 
@@ -404,7 +222,7 @@ header nav ul li a:active {
 
 .gallery .swiper-container img {
   width: 70%;
-  height: 760px;
+  height: 720px;
   margin-left: 15%;
   margin-top: -4%;
   cursor: -webkit-grab;
@@ -579,14 +397,14 @@ header nav ul li a:active {
 }
 
 .part2 .rotatedContainer {
+  position: relative;
   background: -webkit-gradient(linear, left top, left bottom, from(#d02626), to(#b01e1e));
   background: linear-gradient(#d02626, #b01e1e);
-  height: 200px;
-  width: 200px;
-  position: relative;
-  border-radius: 13px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  border-radius: 13px;
+  height: 200px;
+  width: 200px;
   -webkit-box-shadow: -3px -3px 0px 0px #620000;
           box-shadow: -3px -3px 0px 0px #620000;
 }
@@ -650,9 +468,9 @@ header nav ul li a:active {
 .part2 .rotatedContainer .content {
   top: 50%;
   left: 50%;
-  position: absolute;
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
           transform: translate(-50%, -50%) rotate(-45deg);
+  position: absolute;
 }
 
 .part2 .rotatedContainer .content p {
@@ -688,15 +506,17 @@ header nav ul li a:active {
 }
 
 .part3 .rotatedContainer {
-  background: #270101;
-  height: 450px;
-  width: 450px;
-  border-radius: 16px;
   position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d02626), to(#b01e1e));
+  background: linear-gradient(#d02626, #b01e1e);
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  border-radius: 16px;
+  height: 450px;
+  width: 450px;
   -webkit-box-shadow: 3px 3px 0px 0px #620000;
           box-shadow: 3px 3px 0px 0px #620000;
+  background: #620000;
   overflow: hidden;
 }
 
@@ -801,17 +621,17 @@ header nav ul li a:active {
 }
 
 .part4 .rotatedContainer {
-  height: 450px;
-  width: 450px;
+  position: relative;
   background: -webkit-gradient(linear, left top, left bottom, from(#d02626), to(#b01e1e));
   background: linear-gradient(#d02626, #b01e1e);
-  color: white;
-  border-radius: 16px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  border-radius: 16px;
+  height: 450px;
+  width: 450px;
   -webkit-box-shadow: 4px 4px 0px 0px #620000;
           box-shadow: 4px 4px 0px 0px #620000;
-  position: relative;
+  color: white;
 }
 
 @media (max-width: 1400px) {
@@ -855,11 +675,11 @@ header nav ul li a:active {
 }
 
 .part4 .content {
-  position: absolute;
-  left: 50%;
   top: 50%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
           transform: translate(-50%, -50%) rotate(-45deg);
+  position: absolute;
 }
 
 .part4 .content p {

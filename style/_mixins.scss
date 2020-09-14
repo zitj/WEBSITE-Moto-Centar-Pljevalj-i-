@@ -1,0 +1,20 @@
+@mixin headingType($fontsize, $marginTop, $marginBottom) {
+    font-size: $fontsize;
+    margin-top: $marginTop;
+    margin-bottom: $marginBottom;
+}
+@mixin centering($rotate){
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) $rotate;
+    position: absolute;
+}
+@mixin rotatedContainerMixin($radius, $height, $width, $shadow){
+    position: relative;
+    background: $red-gradient;
+    transform: rotate(45deg);
+    border-radius: $radius;
+    height: $height;
+    width: $width;
+    box-shadow: $shadow $shadow 0px 0px $burgendy-shadow;
+}
