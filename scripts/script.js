@@ -1,4 +1,6 @@
-const navButtons = document.querySelectorAll('a');
+
+const navigation = document.querySelector('nav');
+const navButtons = navigation.querySelectorAll('a');
 const galleryButton = document.getElementById('galleryButton');
 const partOne = document.querySelector('.part1');
 const partTwo = document.querySelector('.part2');
@@ -27,14 +29,16 @@ const classAdder = () =>{
     advertisements.classList.add('active');
 }
 for(let i=0; i < navButtons.length; i++){
+    
     navButtons[i].addEventListener('click', classAdder);
 }
-
 galleryButton.addEventListener('click', classRemoval);
+
 advertisementsButton.addEventListener('click', ()=>{
     classRemoval();
     gallery.classList.add('active');
     advertisements.classList.remove('active');
 });
+
 closeButton.addEventListener('click', classAdder);
 

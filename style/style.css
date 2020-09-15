@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
 }
 
 a {
@@ -221,6 +222,7 @@ header nav a:active {
 @media (max-width: 420px) {
   .advertisements .containerAdvertisement {
     margin: 7% 5%;
+    width: 125%;
     height: 200px;
   }
 }
@@ -228,6 +230,7 @@ header nav a:active {
 @media (max-width: 320px) {
   .advertisements .containerAdvertisement {
     height: 160px;
+    background: pink;
   }
 }
 

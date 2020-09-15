@@ -12,6 +12,7 @@ body{
     margin: 0;
     padding:0;
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
 }
 a{
     text-decoration: none;
@@ -150,10 +151,12 @@ header{
                }
         @media (max-width: 420px) {
               margin: 7% 5%;
+              width: 125%;
               height: 200px;
                }
         @media (max-width: 320px) {
               height: 160px;
+              background: pink;
                }
         .rotatedContainer{
             height: 150px;
