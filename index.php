@@ -1,3 +1,4 @@
+<?php include('database_connection.php')?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +11,20 @@
     <script src="scripts/script.js" defer></script>
 </head>
 <body>
+    <div class="advertisements active">
+        
+    <?php foreach($oglasi as $oglas): ?>
+    <div class="containerAdvertisement">
+        <div class="rotatedContainer"><img src="img/<?php echo $oglas['title']?>/1.jpg" alt=""></div><!-- end .rotatedContainer -->
+        <div class="text">
+        <h3><?php echo htmlspecialchars($oglas['title']);?></h3>
+        <p><?php echo htmlspecialchars($oglas['descr']);?></p>
+        <h4>cena: <?php echo htmlspecialchars($oglas['price']);?> $</h4>
+        </div><!-- end .text -->
+        <a href="#">detalji</a>
+    </div><!-- end .container -->
+    <?php endforeach; ?>   
+    </div><!-- end .advertisements -->
     <div class="gallery active">
         <div class="close-button"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
             width="80" height="80"
@@ -39,23 +54,25 @@
         <!-- <div class="swiper-scrollbar"></div> -->
         </div><!-- end .container-->
     </div><!-- end gallery-->
-    <header>
-       
+    
+    
 
+
+    <header>
         <nav class="center">
             <a href="#pocetna">početna</a>
             <a id="galleryButton" href="#">galerija</a>
             <a href="#lokacija">lokacija</a>
             <a href="#kontakt">kontakt</a>
-            <a href="#">oglasi</a>
+            <a id="advertisementsButton" href="#">oglasi</a>
         </nav>
     </header>
 
- 
+
 
     <div class="part1 active" id="pocetna">
         <div class="logo center">
-            <?xml version="1.0" encoding="utf-8"?>
+            
             <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
             <svg class="motorcycle" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          viewBox="0 0 727 392" style="enable-background:new 0 0 727 392;" xml:space="preserve">

@@ -159,7 +159,271 @@ header nav a:active {
   opacity: 1;
 }
 
-.gallery.active {
+.advertisements {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: block;
+  opacity: 1;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  margin-top: 0%;
+  z-index: 19;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  top: 11%;
+}
+
+.advertisements .containerAdvertisement {
+  height: 300px;
+  width: 45%;
+  margin: 2.5% 27.5%;
+  background: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 2px 0px 3px #d12a2a;
+          box-shadow: 2px 2px 0px 3px #d12a2a;
+}
+
+@media (max-width: 1400px) {
+  .advertisements .containerAdvertisement {
+    width: 60%;
+    margin: 2.5% 20%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .advertisements .containerAdvertisement {
+    width: 70%;
+    margin: 2.5% 15%;
+  }
+}
+
+@media (max-width: 768px) {
+  .advertisements .containerAdvertisement {
+    width: 90%;
+    margin: 2.5% 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .advertisements .containerAdvertisement {
+    margin: 7% 5%;
+    height: 260px;
+  }
+}
+
+@media (max-width: 420px) {
+  .advertisements .containerAdvertisement {
+    margin: 7% 5%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 320px) {
+  .advertisements .containerAdvertisement {
+    height: 160px;
+  }
+}
+
+.advertisements .containerAdvertisement .rotatedContainer {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-box-shadow: -1px -1px 0px 2px #d12a2a;
+          box-shadow: -1px -1px 0px 2px #d12a2a;
+  margin: 8% 3% 5% 6%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+@media (max-width: 1400px) {
+  .advertisements .containerAdvertisement .rotatedContainer {
+    margin-top: 9%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .advertisements .containerAdvertisement .rotatedContainer {
+    margin-top: 10.5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .advertisements .containerAdvertisement .rotatedContainer {
+    margin-top: 15%;
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@media (max-width: 420px) {
+  .advertisements .containerAdvertisement .rotatedContainer {
+    margin-top: 12%;
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 384px) {
+  .advertisements .containerAdvertisement .rotatedContainer {
+    margin-top: 14%;
+  }
+}
+
+@media (max-width: 320px) {
+  .advertisements .containerAdvertisement .rotatedContainer {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.advertisements .containerAdvertisement .rotatedContainer img {
+  left: -15%;
+  top: -18%;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+@media (max-width: 480px) {
+  .advertisements .containerAdvertisement .rotatedContainer img {
+    height: 120px;
+    width: 120px;
+    left: 0%;
+    top: 0%;
+  }
+}
+
+@media (max-width: 420px) {
+  .advertisements .containerAdvertisement .rotatedContainer img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 320px) {
+  .advertisements .containerAdvertisement .rotatedContainer img {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.advertisements .containerAdvertisement .text {
+  margin-left: 5%;
+  width: 60%;
+  font-size: 1.2em;
+  color: #333333;
+}
+
+@media (max-width: 480px) {
+  .advertisements .containerAdvertisement .text {
+    width: 50%;
+    font-size: 1.05em;
+  }
+}
+
+@media (max-width: 420px) {
+  .advertisements .containerAdvertisement .text {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 320px) {
+  .advertisements .containerAdvertisement .text {
+    font-size: .8em;
+  }
+}
+
+@media (max-width: 420px) {
+  .advertisements .containerAdvertisement .text p {
+    margin-bottom: 5px;
+  }
+}
+
+.advertisements .containerAdvertisement .text h3 {
+  font-size: 1.6em;
+  text-transform: uppercase;
+  margin-bottom: .5em;
+}
+
+@media (max-width: 480px) {
+  .advertisements .containerAdvertisement .text h3 {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 420px) {
+  .advertisements .containerAdvertisement .text h3 {
+    font-size: 1.2em;
+  }
+}
+
+.advertisements .containerAdvertisement .text h4 {
+  font-size: 1.1em;
+  margin: 0;
+  color: #4e4e4e;
+}
+
+.advertisements .containerAdvertisement .text h4:nth-of-type(1) {
+  margin-top: 2em;
+  margin-bottom: 3px;
+}
+
+@media (max-width: 480px) {
+  .advertisements .containerAdvertisement .text h4:nth-of-type(1) {
+    margin-top: 0em;
+  }
+}
+
+.advertisements .containerAdvertisement a {
+  position: absolute;
+  right: 10%;
+  bottom: 20%;
+  background: #d12a2a;
+  color: white;
+  text-decoration: none;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  border-radius: 15px;
+  letter-spacing: 1px;
+}
+
+.advertisements .containerAdvertisement a:hover {
+  background: #e64040;
+}
+
+.advertisements .containerAdvertisement a:active {
+  background: #d12a2a;
+}
+
+@media (max-width: 1024px) {
+  .advertisements .containerAdvertisement a {
+    right: 5%;
+    bottom: 8%;
+  }
+}
+
+@media (max-width: 420px) {
+  .advertisements .containerAdvertisement a {
+    padding: 8px 15px;
+    right: 3%;
+    border-radius: 50px;
+    bottom: 4%;
+  }
+}
+
+.gallery.active,
+.advertisements.active {
   opacity: 0;
   margin-left: -100%;
   -webkit-transform: scale(0);

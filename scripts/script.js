@@ -7,6 +7,8 @@ const partFour = document.querySelector('.part4');
 const gallery = document.querySelector('.gallery');
 const closeButton = document.querySelector('.close-button');
 const callButton = document.querySelector('.call-button');
+const advertisements = document.querySelector('.advertisements');
+const advertisementsButton = document.getElementById('advertisementsButton');
 
 const classRemoval = () =>{
     gallery.classList.remove('active');
@@ -14,6 +16,7 @@ const classRemoval = () =>{
     partTwo.classList.remove('active');
     partThree.classList.remove('active');
     partFour.classList.remove('active');
+    
 }
 const classAdder = () =>{
     gallery.classList.add('active');
@@ -21,10 +24,17 @@ const classAdder = () =>{
     partTwo.classList.add('active');
     partThree.classList.add('active');
     partFour.classList.add('active');
+    advertisements.classList.add('active');
 }
 for(let i=0; i < navButtons.length; i++){
     navButtons[i].addEventListener('click', classAdder);
 }
+
 galleryButton.addEventListener('click', classRemoval);
+advertisementsButton.addEventListener('click', ()=>{
+    classRemoval();
+    gallery.classList.add('active');
+    advertisements.classList.remove('active');
+});
 closeButton.addEventListener('click', classAdder);
 
