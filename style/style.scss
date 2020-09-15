@@ -120,7 +120,16 @@ header{
     opacity: 1;
 }
 
-
+.individualAdvertisement{
+    width: 500px;
+    height: 500px;
+    background: rgb(92, 212, 92);
+    color: white;
+    position: absolute;
+    top: 20%;
+    left:37%;
+    z-index: 2000;
+}
 .advertisements{
     @include showingSection(absolute);
     top: 11%;

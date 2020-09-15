@@ -17,9 +17,9 @@
     $oglasi = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
     // free result from memory
-    mysqli_free_result($result);
+    // mysqli_free_result($result);
 
     //close the connection
-    mysqli_close($conn);
+    // mysqli_close($conn);
 
 ?>
