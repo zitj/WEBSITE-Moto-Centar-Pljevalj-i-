@@ -40,12 +40,14 @@ header{
         left: 50%;
         top: 50%;
         }   
+ 
    }
     nav{
         width:40%;
         display: flex;
         justify-content: space-around;
                 a{
+                    font-size: .8em;
                     color: white;
                     letter-spacing: 1px;
                     text-decoration: none;
@@ -54,9 +56,9 @@ header{
                     border-radius: 13px;
                     line-height: 10px;
                     transition: .1s ease-in-out;
-                    @media (max-width: 420px) {
-                        padding: 15px 10px;
-                        }
+                    @media (max-width: 420px){
+                        padding: 15px 5px;
+                        }  
                     &:hover{
                         background: white;
                         color: $red-mcp;
@@ -121,14 +123,10 @@ header{
 }
 
 .individualAdvertisement{
-    width: 500px;
-    height: 500px;
+    @include showingSection(absolute);
     background: rgb(92, 212, 92);
-    color: white;
-    position: absolute;
-    top: 20%;
-    left:37%;
-    z-index: 2000;
+    z-index: 3000;
+    top:70px;
 }
 .advertisements{
     @include showingSection(absolute);
@@ -160,12 +158,10 @@ header{
                }
         @media (max-width: 420px) {
               margin: 7% 5%;
-              width: 125%;
               height: 200px;
                }
         @media (max-width: 320px) {
               height: 160px;
-              background: pink;
                }
         .rotatedContainer{
             height: 150px;

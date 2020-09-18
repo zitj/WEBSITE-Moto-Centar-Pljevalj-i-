@@ -1,63 +1,5 @@
-<?php
-include('database_connection.php');
+<?php include ('header.php'); ?>
 
-//check GET request id param
-if(isset($_GET['id'])){
- 
-    print_r($_GET['id']);
-    $id = mysqli_real_escape_string($conn, $_GET['id']);
-    
-
-    // //make sql
-    $sql = "SELECT * FROM novajlija WHERE id = $id";
-
-    
-    // // get the query result
-    $result = mysqli_query($conn, $sql);
-
-    // //fetch result in array format
-    $oglasBre = mysqli_fetch_assoc($result);
-
-    print_r($oglasBre);
-    // mysqli_free_result($result);
-    // mysqli_close($conn);
-}
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,  maximum-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <title>Moto Centar Pljevaljčić</title>
-    <script src="scripts/script.js" defer></script>
-</head>
-<body>
-<div class="individualAdvertisement">
-        <?php if($oglasBre): ?>
-        <h4><?php echo htmlspecialchars($oglasBre['title']);?></h4>
-        <?php else: ?>
-        <h5>No such advertisement exist!</h5>
-        <?php endif; ?>
-    </div>
-   
-    <div class="advertisements active">
-    <?php foreach($oglasi as $oglas): ?>
-    <div class="containerAdvertisement">
-        <div class="rotatedContainer"><img src="img/oglasi/<?php echo $oglas['title']?>/1.jpg" alt=""></div><!-- end .rotatedContainer -->
-        <div class="text">
-        <h3><?php echo htmlspecialchars($oglas['title']);?></h3>
-        <p><?php echo htmlspecialchars($oglas['descr']);?></p>
-        <h4>cena: <?php echo htmlspecialchars($oglas['price']);?> $</h4>
-        </div><!-- end .text -->
-        <a href="?id=<?php echo $oglas['id']?>">detalji</a>
-        
-        
-    </div><!-- end .container -->
-    <?php endforeach; ?>   
-    </div><!-- end .advertisements -->
     <div class="gallery active">
         <div class="close-button"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
             width="80" height="80"
@@ -91,15 +33,6 @@ if(isset($_GET['id'])){
     
 
 
-    <header>
-        <nav class="center">
-            <a href="#pocetna">početna</a>
-            <a id="galleryButton" href="#">galerija</a>
-            <a href="#lokacija">lokacija</a>
-            <a href="#kontakt">kontakt</a>
-            <a id="advertisementsButton" href="#">oglasi</a>
-        </nav>
-    </header>
 
 
 
