@@ -175,9 +175,140 @@ header nav a:active {
           transform: scale(1);
   -webkit-perspective: 1000px;
           perspective: 1000px;
-  background: #5cd45c;
   z-index: 3000;
   top: 70px;
+  text-align: center;
+}
+
+.individualAdvertisement #advertisementTitle {
+  font-size: 4em;
+}
+
+.individualAdvertisement .text {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+          transform: translate(-50%, -50%) rotate(0deg);
+  position: absolute;
+  top: 70%;
+}
+
+.individualAdvertisement .text button {
+  padding: 10px 15px 10px 30px;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d02626), to(#b01e1e));
+  background: linear-gradient(#d02626, #b01e1e);
+  color: white;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+  -webkit-box-shadow: 0px 2px 0px 0px #270101;
+          box-shadow: 0px 2px 0px 0px #270101;
+}
+
+@media (max-width: 1400px) {
+  .individualAdvertisement .text button {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 420px) {
+  .individualAdvertisement .text button {
+    font-size: 1.5em;
+  }
+}
+
+.individualAdvertisement .text button:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+.individualAdvertisement .text button:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.individualAdvertisement .text button a {
+  color: white;
+}
+
+.individualAdvertisement .text button svg {
+  position: absolute;
+  left: 5%;
+  -webkit-transform: rotate(-60deg) scale(0.8);
+          transform: rotate(-60deg) scale(0.8);
+}
+
+@media (max-width: 1400px) {
+  .individualAdvertisement .text button svg {
+    top: 19%;
+  }
+}
+
+@media (max-width: 420px) {
+  .individualAdvertisement .text button svg {
+    top: 24%;
+  }
+}
+
+.individualAdvertisement .rotatedContainer {
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d02626), to(#b01e1e));
+  background: linear-gradient(#d02626, #b01e1e);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 45px;
+  height: 300px;
+  width: 300px;
+  -webkit-box-shadow: -5px -5px 0px 0px #620000;
+          box-shadow: -5px -5px 0px 0px #620000;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  position: absolute;
+  background: white;
+  -webkit-box-shadow: -5px -5px 0px 1px #d02626;
+          box-shadow: -5px -5px 0px 1px #d02626;
+  border: 1px solid #d02626;
+  top: 40%;
+}
+
+.individualAdvertisement .rotatedContainer .content {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.individualAdvertisement .rotatedContainer img {
+  height: 300px;
+  width: 300px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.individualAdvertisement .rotatedContainer h2 {
+  position: absolute;
+}
+
+.individualAdvertisement .rotatedContainer h2:nth-of-type(1) {
+  bottom: 35%;
+  right: -35%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.individualAdvertisement .rotatedContainer h2:nth-of-type(2) {
+  top: 38%;
+  left: -33%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .advertisements {
