@@ -652,9 +652,13 @@ header nav a:active {
 
 .gallery .swiper-container img {
   width: 70%;
+  border-radius: 45px;
   height: 720px;
   margin-left: 15%;
-  margin-top: -4%;
+  margin-top: 0%;
+  border: 1px solid #d02626;
+  -webkit-box-shadow: 4px 4px 0px 0px #d02626;
+          box-shadow: 4px 4px 0px 0px #d02626;
   cursor: -webkit-grab;
   cursor: grab;
 }
@@ -675,14 +679,14 @@ header nav a:active {
 @media (max-width: 600px) {
   .gallery .swiper-container img {
     height: 380px;
-    width: 100%;
+    width: 90%;
     margin-top: 0;
-    margin-left: 0%;
+    margin-left: 5%;
   }
 }
 
 .gallery .swiper-pagination {
-  margin-bottom: 3%;
+  margin-bottom: 0%;
 }
 
 @media (max-width: 600px) {
@@ -698,6 +702,13 @@ header nav a:active {
 .gallery .swiper-button-next,
 .gallery .swiper-button-prev {
   color: #d02626;
+}
+
+@media (max-width: 600px) {
+  .gallery .swiper-button-next,
+  .gallery .swiper-button-prev {
+    display: none;
+  }
 }
 
 .part1 {
