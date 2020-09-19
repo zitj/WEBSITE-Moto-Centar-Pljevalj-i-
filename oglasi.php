@@ -31,6 +31,7 @@ if(isset($_GET['id'])){
         <div class="text">
         <h3><?php echo htmlspecialchars($oglas['title']);?></h3>
         <p><?php echo htmlspecialchars($oglas['descr']);?></p>
+        <h4>godiste: <?php echo htmlspecialchars($oglas['godiste']);?> god</h4>
         <h4>cena: <?php echo htmlspecialchars($oglas['price']);?> $</h4>
         </div><!-- end .text -->
         <a class="containerAdvertisementsButton"href="oglas.php?id=<?php echo $oglas['id']?>">detalji</a>

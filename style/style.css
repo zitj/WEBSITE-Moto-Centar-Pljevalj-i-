@@ -182,20 +182,19 @@ header nav a:active {
 }
 
 .individualAdvertisement .text {
-  width: 30%;
-  margin-left: 35%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 300;
   text-align: left;
+  width: 25%;
+  margin-left: 38%;
 }
 
 .individualAdvertisement .text p {
-  margin: 10px 0;
+  margin: 10px 0 15px 0;
+  -webkit-box-shadow: -1px 1px 0 0px #d02626;
+          box-shadow: -1px 1px 0 0px #d02626;
+  border-radius: 6px;
+  padding: 10px;
 }
 
 .individualAdvertisement .text p span {
@@ -278,6 +277,7 @@ header nav a:active {
   -webkit-box-shadow: 0px 2px 0px 0px #270101;
           box-shadow: 0px 2px 0px 0px #270101;
   font-size: .3em;
+  bottom: 20px;
 }
 
 @media (max-width: 1400px) {

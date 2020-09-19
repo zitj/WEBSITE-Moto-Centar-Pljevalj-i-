@@ -68,10 +68,11 @@ $broj = 1;
             <p>Snaga u ks:<span> xxx ks</span></p>
             </div>
             <div class="kolona">
-            <p>Oprema: ima pomocni tockovi</p>
-            <p>Papiri: ima pomocni tockovi</p>
-            <p>Stanje: ima pomocni tockovi</p>
-            <p>Prenos: ima pomocni tockovi</p>
+            <p>Oprema: <span>Zatamnjen vizir, xenon svetla, mali karbon retrovizori, led zmigavci, poliran ram i zadnja viljuska jos nesto nabutaj ako moze, ne be roman decko napisi</span> </p>
+            <p>Papiri: <span>Ima sve papire</span></p>
+            <p>Stanje: <span>Odlicno, bez ulaganja.</span></p>
+            <p>Prenos: <span>Obavezan</span></p>
+            <p>Dodatno: <span>ima i koferce</span></p>
             <!-- <p><?php echo htmlspecialchars($oglasBre['descr']);?></p> -->
             </div>
             </div>
