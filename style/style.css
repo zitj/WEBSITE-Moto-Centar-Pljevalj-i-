@@ -23,7 +23,7 @@ header {
   background: linear-gradient(#d02626, #b01e1e);
   height: 70px;
   width: 100%;
-  z-index: 20;
+  z-index: 222220;
 }
 
 @media (max-width: 940px) {
@@ -175,9 +175,32 @@ header nav a:active {
           transform: scale(1);
   -webkit-perspective: 1000px;
           perspective: 1000px;
+  text-align: center;
   z-index: 3000;
   top: 70px;
-  text-align: center;
+  color: #353535;
+}
+
+.individualAdvertisement .text {
+  width: 30%;
+  margin-left: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.individualAdvertisement .text p {
+  margin: 10px 0;
+}
+
+.individualAdvertisement .text p span {
+  font-weight: 600;
+  font-style: italic;
 }
 
 .individualAdvertisement .swiper-container {
@@ -233,7 +256,8 @@ header nav a:active {
 }
 
 .individualAdvertisement #advertisementTitle {
-  font-size: 4em;
+  font-size: 3.5em;
+  margin-bottom: 0;
 }
 
 .individualAdvertisement button {
@@ -253,6 +277,7 @@ header nav a:active {
   transition: .1s ease-in-out;
   -webkit-box-shadow: 0px 2px 0px 0px #270101;
           box-shadow: 0px 2px 0px 0px #270101;
+  font-size: .3em;
 }
 
 @media (max-width: 1400px) {

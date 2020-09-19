@@ -23,7 +23,7 @@ header{
     background:$red-gradient;
     height: 70px;
     width: 100%;
-    z-index: 20;
+    z-index: 222220;
     
    nav.center{
     @media (max-width: 940px) {
@@ -124,9 +124,27 @@ header{
 
 .individualAdvertisement{
     @include showingSection(absolute);
+    text-align: center;
     z-index: 3000;
     top:70px;
-    text-align: center;
+    color: #353535;
+    .text{
+        width: 30%;
+        margin-left: 35%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+        font-weight: 300;
+        text-align: left;
+        p{
+            margin: 10px 0;
+        span{
+            font-weight: 600;
+            font-style: italic;
+        }
+        }
+        
+    }
     .swiper-container{
         height: 500px;
         top: -3%;
@@ -147,7 +165,6 @@ header{
            }
        }
     }
-   
     .swiper-button-prev{
         color: $red-mcp;
         left:29%;
@@ -160,10 +177,12 @@ header{
         background: $red-mcp;
     }
     #advertisementTitle{
-        font-size: 4em;
+        font-size: 3.5em;
+        margin-bottom: 0;
     }
   button{
-      @include buttonMixin();
+   @include buttonMixin();
+   font-size: .3em;
   }
 }
 .advertisements{
