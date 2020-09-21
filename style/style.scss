@@ -262,18 +262,16 @@ header{
                 position: absolute;    
                 transform: rotate(-45deg);
                 @media (max-width: 480px) {
-                    height: 120px;
-                    width: 120px;
-                    left: 0%;
-                    top: 0%;
+                    height: 169px;
+                    width: 169px;
                      }
                 @media (max-width: 420px) {
-                    height: 100px;
-                    width: 100px;
+                    height: 140px;
+                    width: 140px;
                      }
                 @media (max-width: 320px) {
-                    height: 80px;
-                    width: 80px;
+                    height: 113px;
+                    width: 113px;
                      }     
                
             }
@@ -304,24 +302,27 @@ header{
                 text-transform: uppercase;
                 margin-bottom: .5em;
                 @media (max-width: 480px) {
-                    font-size: 1.4em;
+                    font-size: 1.3em;
                   }
                 @media (max-width: 420px) {
-                    font-size: 1.2em;
+                    font-size: 1.1em;
                   }
               
             }
             h4{
                 font-size: 1.1em;
                 margin: 0;
-                color: rgb(78, 78, 78);
+                color: rgb(59, 59, 59);
                 &:nth-of-type(1){
                     margin-top: 2em;
                     margin-bottom: 3px;
                     @media (max-width: 480px) {
-                        margin-top: 0em;
+                        margin-top: 10px;
                       }
                 }
+                @media (max-width: 480px) {
+                    font-size: .9em;
+                  }
                 
             }
         }

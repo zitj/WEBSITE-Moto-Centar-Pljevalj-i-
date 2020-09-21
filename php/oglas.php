@@ -63,16 +63,16 @@ $broj = 1;
             <div class="kolona">
             <p>Godište: <span><?php echo htmlspecialchars($oglasBre['godiste']);?> god</span></p>
             <p>Cena: <span><?php echo htmlspecialchars($oglasBre['price']);?> &euro;</span></p>
-            <p>Prešo: <span>xxxxxxx km</span></p>
-            <p>Snaga u kw:<span> xxx kw</span></p>
-            <p>Snaga u ks:<span> xxx ks</span></p>
+            <p>Prešo: <span><?php echo htmlspecialchars($oglasBre['kilometraza']);?> km</span></p>
+            <p>Snaga u kw: <span><?php echo htmlspecialchars($oglasBre['kw']);?> kw</span></p>
+            <p>Snaga u ks: <span><?php echo htmlspecialchars($oglasBre['ks']);?> ks</span></p>
             </div>
             <div class="kolona">
-            <p>Oprema: <span>Zatamnjen vizir, xenon svetla, mali karbon retrovizori, led zmigavci, poliran ram i zadnja viljuska jos nesto nabutaj ako moze, ne be roman decko napisi</span> </p>
-            <p>Papiri: <span>Ima sve papire</span></p>
-            <p>Stanje: <span>Odlicno, bez ulaganja.</span></p>
-            <p>Prenos: <span>Obavezan</span></p>
-            <p>Dodatno: <span>ima i koferce</span></p>
+            <p>Oprema: <span><?php echo htmlspecialchars($oglasBre['oprema']);?></span> </p>
+            <p>Papiri: <span><?php echo htmlspecialchars($oglasBre['papiri']);?></span></p>
+            <p>Stanje: <span><?php echo htmlspecialchars($oglasBre['stanje']);?></span></p>
+            <p>Prenos: <span><?php echo htmlspecialchars($oglasBre['prenos']);?></span></p>
+            <p>Dodatno: <span><?php echo htmlspecialchars($oglasBre['dodatno']);?></span></p>
             <!-- <p><?php echo htmlspecialchars($oglasBre['descr']);?></p> -->
             </div>
             </div>

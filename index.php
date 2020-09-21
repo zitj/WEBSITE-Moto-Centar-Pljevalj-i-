@@ -34,10 +34,11 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide"><img src="img/galerija/11.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="img/galerija/22.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="img/galerija/33.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="img/galerija/44.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/galerija/1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/galerija/2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/galerija/3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/galerija/4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/galerija/5.jpg" alt=""></div>
         
         </div>
         <!-- If we need pagination -->

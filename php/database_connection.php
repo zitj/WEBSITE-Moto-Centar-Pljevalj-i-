@@ -8,7 +8,7 @@
     }
 
     //write query for all oglasi
-    $sql = 'SELECT title, descr, price, godiste, images, id  FROM novajlija';
+    $sql = 'SELECT title, descr, price, godiste, kilometraza, kw, ks, oprema, papiri, stanje, prenos, dodatno, id  FROM novajlija';
 
     //make query & get result
     $result = mysqli_query($conn, $sql);

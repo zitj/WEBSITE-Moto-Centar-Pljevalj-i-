@@ -463,24 +463,22 @@ header nav a:active {
 
 @media (max-width: 480px) {
   .advertisements .containerAdvertisement .rotatedContainer img {
-    height: 120px;
-    width: 120px;
-    left: 0%;
-    top: 0%;
+    height: 169px;
+    width: 169px;
   }
 }
 
 @media (max-width: 420px) {
   .advertisements .containerAdvertisement .rotatedContainer img {
-    height: 100px;
-    width: 100px;
+    height: 140px;
+    width: 140px;
   }
 }
 
 @media (max-width: 320px) {
   .advertisements .containerAdvertisement .rotatedContainer img {
-    height: 80px;
-    width: 80px;
+    height: 113px;
+    width: 113px;
   }
 }
 
@@ -524,20 +522,20 @@ header nav a:active {
 
 @media (max-width: 480px) {
   .advertisements .containerAdvertisement .text h3 {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
 }
 
 @media (max-width: 420px) {
   .advertisements .containerAdvertisement .text h3 {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
 
 .advertisements .containerAdvertisement .text h4 {
   font-size: 1.1em;
   margin: 0;
-  color: #4e4e4e;
+  color: #3b3b3b;
 }
 
 .advertisements .containerAdvertisement .text h4:nth-of-type(1) {
@@ -547,7 +545,13 @@ header nav a:active {
 
 @media (max-width: 480px) {
   .advertisements .containerAdvertisement .text h4:nth-of-type(1) {
-    margin-top: 0em;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .advertisements .containerAdvertisement .text h4 {
+    font-size: .9em;
   }
 }
 
