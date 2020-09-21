@@ -27,7 +27,7 @@ if(isset($_GET['id'])){
 <div class="advertisements">
     <?php foreach($oglasi as $oglas): ?>
     <div class="containerAdvertisement">
-        <div class="rotatedContainer"><img src="img/oglasi/<?php echo $oglas['title']?>/1.jpg" alt=""></div><!-- end .rotatedContainer -->
+        <div class="rotatedContainer"><img src="../img/oglasi/<?php echo $oglas['title']?>/1.jpg" alt=""></div><!-- end .rotatedContainer -->
         <div class="text">
         <h3><?php echo htmlspecialchars($oglas['title']);?></h3>
         <p><?php echo htmlspecialchars($oglas['descr']);?></p>

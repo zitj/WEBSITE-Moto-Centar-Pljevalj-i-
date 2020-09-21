@@ -22,7 +22,7 @@ if(isset($_GET['id'])){
     // mysqli_close($conn);
 }
 
-$images = glob("img/oglasi/{$oglasBre['title']}/*.{jpg,png,gif}", GLOB_BRACE);
+$images = glob("../img/oglasi/{$oglasBre['title']}/*.{jpg,png,gif}", GLOB_BRACE);
 
 $broj = 1;
 
@@ -43,7 +43,7 @@ $broj = 1;
                 <div class="swiper-slide">
                     <div class="containercheRotirano">
                         <div class="content">
-                            <img src="img/oglasi/<?php echo $oglasBre['title']?>/<?php echo $broj++?>.jpg" alt="">
+                            <img src="../img/oglasi/<?php echo $oglasBre['title']?>/<?php echo $broj++?>.jpg" alt="">
                         </div><!--end .content -->
                     </div> <!-- end .containercheRotirano -->
                 </div> <!-- end .swiper-slide -->
