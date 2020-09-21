@@ -176,6 +176,9 @@ header{
         @media (max-width: 1440px) {
             height: 400px;
          }
+        @media (max-width: 800px) {
+            top: -15px;
+         }
         @media (max-width: 420px) {
             height: 350px;
             top: -15px;
@@ -266,20 +269,23 @@ header{
         background: $red-mcp;
     }
     #advertisementTitle{
-        font-size: 3.5em;
+        font-size: 2.5em;
         margin-bottom: 0;
         display: block;
         @media (max-width: 1440px) {
-            font-size: 3em;
-         }
-        @media (max-width: 480px) {
-            font-size: 2.5em;
-         }
-        @media (max-width: 420px) {
             font-size: 2em;
          }
-        @media (max-width: 320px) {
+        @media (max-width: 420px) {
+            font-size: 1.8em;
+         }
+        @media (max-width: 390px) {
             font-size: 1.6em;
+         }
+        @media (max-width: 360px) {
+            font-size: 1.5em;
+         }
+        @media (max-width: 320px) {
+            font-size: 1.2em;
          }
         
     }

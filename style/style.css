@@ -255,6 +255,12 @@ header nav a:active {
   }
 }
 
+@media (max-width: 800px) {
+  .individualAdvertisement .swiper-container {
+    top: -15px;
+  }
+}
+
 @media (max-width: 420px) {
   .individualAdvertisement .swiper-container {
     height: 350px;
@@ -414,32 +420,38 @@ header nav a:active {
 }
 
 .individualAdvertisement #advertisementTitle {
-  font-size: 3.5em;
+  font-size: 2.5em;
   margin-bottom: 0;
   display: block;
 }
 
 @media (max-width: 1440px) {
   .individualAdvertisement #advertisementTitle {
-    font-size: 3em;
-  }
-}
-
-@media (max-width: 480px) {
-  .individualAdvertisement #advertisementTitle {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 }
 
 @media (max-width: 420px) {
   .individualAdvertisement #advertisementTitle {
-    font-size: 2em;
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 390px) {
+  .individualAdvertisement #advertisementTitle {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 360px) {
+  .individualAdvertisement #advertisementTitle {
+    font-size: 1.5em;
   }
 }
 
 @media (max-width: 320px) {
   .individualAdvertisement #advertisementTitle {
-    font-size: 1.6em;
+    font-size: 1.2em;
   }
 }
 
