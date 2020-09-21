@@ -1,4 +1,6 @@
-const navButtons = document.querySelectorAll('a');
+
+const navigation = document.querySelector('nav');
+const navButtons = navigation.querySelectorAll('a');
 const galleryButton = document.getElementById('galleryButton');
 const partOne = document.querySelector('.part1');
 const partTwo = document.querySelector('.part2');
@@ -14,6 +16,7 @@ const classRemoval = () =>{
     partTwo.classList.remove('active');
     partThree.classList.remove('active');
     partFour.classList.remove('active');
+    
 }
 const classAdder = () =>{
     gallery.classList.add('active');
@@ -23,8 +26,10 @@ const classAdder = () =>{
     partFour.classList.add('active');
 }
 for(let i=0; i < navButtons.length; i++){
+    
     navButtons[i].addEventListener('click', classAdder);
 }
 galleryButton.addEventListener('click', classRemoval);
+
 closeButton.addEventListener('click', classAdder);
 

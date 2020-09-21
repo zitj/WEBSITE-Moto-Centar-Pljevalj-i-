@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +11,17 @@
     <script src="scripts/script.js" defer></script>
 </head>
 <body>
+
+<header>
+        <nav class="center">
+            <a href="index.php#pocetna">početna</a>
+            <a id="galleryButton" href="#">galerija</a>
+            <a href="index.php#lokacija">lokacija</a>
+            <a href="index.php#kontakt">kontakt</a>
+            <a id="advertisementsButton" href="php/oglasi.php">oglasi</a>
+        </nav>
+</header>
+
     <div class="gallery active">
         <div class="close-button"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
             width="80" height="80"
@@ -22,10 +34,11 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide"><img src="img/galerija/11.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="img/galerija/22.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="img/galerija/33.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="img/galerija/44.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/galerija/1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/galerija/2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/galerija/3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/galerija/4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/galerija/5.jpg" alt=""></div>
         
         </div>
         <!-- If we need pagination -->
@@ -39,23 +52,16 @@
         <!-- <div class="swiper-scrollbar"></div> -->
         </div><!-- end .container-->
     </div><!-- end gallery-->
-    <header>
-       
+    
+    
 
-        <nav class="center">
-            <a href="#pocetna">početna</a>
-            <a id="galleryButton" href="#">galerija</a>
-            <a href="#lokacija">lokacija</a>
-            <a href="#kontakt">kontakt</a>
-            <a href="#">oglasi</a>
-        </nav>
-    </header>
 
- 
+
+
 
     <div class="part1 active" id="pocetna">
         <div class="logo center">
-            <?xml version="1.0" encoding="utf-8"?>
+            
             <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
             <svg class="motorcycle" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          viewBox="0 0 727 392" style="enable-background:new 0 0 727 392;" xml:space="preserve">

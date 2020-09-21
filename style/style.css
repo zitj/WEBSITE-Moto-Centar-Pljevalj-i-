@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
 }
 
 a {
@@ -22,7 +23,7 @@ header {
   background: linear-gradient(#d02626, #b01e1e);
   height: 70px;
   width: 100%;
-  z-index: 20;
+  z-index: 222220;
 }
 
 @media (max-width: 940px) {
@@ -61,6 +62,7 @@ header nav {
 }
 
 header nav a {
+  font-size: .8em;
   color: white;
   letter-spacing: 1px;
   text-decoration: none;
@@ -74,7 +76,7 @@ header nav a {
 
 @media (max-width: 420px) {
   header nav a {
-    padding: 15px 10px;
+    padding: 15px 5px;
   }
 }
 
@@ -159,7 +161,649 @@ header nav a:active {
   opacity: 1;
 }
 
-.gallery.active {
+.individualAdvertisement {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: block;
+  opacity: 1;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  margin-top: 0%;
+  z-index: 19;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  text-align: center;
+  z-index: 3000;
+  top: 70px;
+  color: #353535;
+}
+
+.individualAdvertisement .text {
+  font-size: 17px;
+  font-weight: 300;
+  text-align: left;
+  width: 25%;
+  margin-left: 38%;
+}
+
+@media (max-width: 800px) {
+  .individualAdvertisement .text {
+    width: 40%;
+    margin-left: 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .individualAdvertisement .text {
+    width: 60%;
+    margin-left: 20%;
+  }
+}
+
+@media (max-width: 420px) {
+  .individualAdvertisement .text {
+    width: 80%;
+    margin-left: 8.5%;
+  }
+}
+
+@media (max-width: 390px) {
+  .individualAdvertisement .text {
+    width: 85%;
+    margin-left: 7%;
+  }
+}
+
+@media (max-width: 375px) {
+  .individualAdvertisement .text {
+    width: 80%;
+    margin-left: 8.5%;
+  }
+}
+
+@media (max-width: 320px) {
+  .individualAdvertisement .text {
+    width: 80%;
+    margin-left: 8%;
+  }
+}
+
+.individualAdvertisement .text p {
+  margin: 10px 0 15px 0;
+  -webkit-box-shadow: -1px 1px 0 0px #d02626;
+          box-shadow: -1px 1px 0 0px #d02626;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.individualAdvertisement .text p span {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.individualAdvertisement .swiper-container {
+  height: 500px;
+  top: -3%;
+}
+
+@media (max-width: 1440px) {
+  .individualAdvertisement .swiper-container {
+    height: 400px;
+  }
+}
+
+@media (max-width: 800px) {
+  .individualAdvertisement .swiper-container {
+    top: -15px;
+  }
+}
+
+@media (max-width: 420px) {
+  .individualAdvertisement .swiper-container {
+    height: 350px;
+    top: -15px;
+  }
+}
+
+@media (max-width: 390px) {
+  .individualAdvertisement .swiper-container {
+    height: 340px;
+  }
+}
+
+@media (max-width: 360px) {
+  .individualAdvertisement .swiper-container {
+    height: 320px;
+  }
+}
+
+@media (max-width: 320px) {
+  .individualAdvertisement .swiper-container {
+    height: 290px;
+    top: -20px;
+  }
+}
+
+.individualAdvertisement .containercheRotirano {
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d02626), to(#b01e1e));
+  background: linear-gradient(#d02626, #b01e1e);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 45px;
+  height: 400px;
+  width: 550px;
+  -webkit-box-shadow: 2px 2px 0px 0px #620000;
+          box-shadow: 2px 2px 0px 0px #620000;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+          transform: translate(-50%, -50%) rotate(0deg);
+  position: absolute;
+  cursor: -webkit-grab;
+  cursor: grab;
+  -webkit-box-shadow: 2px 2px 0px 1px #d02626;
+          box-shadow: 2px 2px 0px 1px #d02626;
+  border: 1px solid #d02626;
+}
+
+@media (max-width: 1440px) {
+  .individualAdvertisement .containercheRotirano {
+    width: 450px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 420px) {
+  .individualAdvertisement .containercheRotirano {
+    width: 400px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 390px) {
+  .individualAdvertisement .containercheRotirano {
+    width: 360px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 360px) {
+  .individualAdvertisement .containercheRotirano {
+    width: 340px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 320px) {
+  .individualAdvertisement .containercheRotirano {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+.individualAdvertisement .containercheRotirano .content {
+  height: 100%;
+  width: 100%;
+  border-radius: 45px;
+  overflow: hidden;
+}
+
+.individualAdvertisement .containercheRotirano .content img {
+  width: 100%;
+  height: 100%;
+}
+
+.individualAdvertisement .swiper-button-prev {
+  color: #d02626;
+  left: 29%;
+}
+
+@media (max-width: 1024px) {
+  .individualAdvertisement .swiper-button-prev {
+    left: 20%;
+  }
+}
+
+@media (max-width: 800px) {
+  .individualAdvertisement .swiper-button-prev {
+    left: 15%;
+  }
+}
+
+@media (max-width: 600px) {
+  .individualAdvertisement .swiper-button-prev {
+    left: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .individualAdvertisement .swiper-button-prev {
+    display: none;
+  }
+}
+
+.individualAdvertisement .swiper-button-next {
+  color: #d02626;
+  right: 29%;
+}
+
+@media (max-width: 1024px) {
+  .individualAdvertisement .swiper-button-next {
+    right: 20%;
+  }
+}
+
+@media (max-width: 800px) {
+  .individualAdvertisement .swiper-button-next {
+    right: 15%;
+  }
+}
+
+@media (max-width: 600px) {
+  .individualAdvertisement .swiper-button-next {
+    right: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .individualAdvertisement .swiper-button-next {
+    display: none;
+  }
+}
+
+.individualAdvertisement .swiper-pagination-bullet {
+  background: #d02626;
+}
+
+.individualAdvertisement #advertisementTitle {
+  font-size: 2.5em;
+  margin-bottom: 0;
+  display: block;
+}
+
+@media (max-width: 1440px) {
+  .individualAdvertisement #advertisementTitle {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 420px) {
+  .individualAdvertisement #advertisementTitle {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 390px) {
+  .individualAdvertisement #advertisementTitle {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 360px) {
+  .individualAdvertisement #advertisementTitle {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 320px) {
+  .individualAdvertisement #advertisementTitle {
+    font-size: 1.2em;
+  }
+}
+
+.individualAdvertisement button {
+  padding: 10px 15px 10px 30px;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d02626), to(#b01e1e));
+  background: linear-gradient(#d02626, #b01e1e);
+  color: white;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+  -webkit-box-shadow: 0px 2px 0px 0px #270101;
+          box-shadow: 0px 2px 0px 0px #270101;
+  font-size: .3em;
+  bottom: 20px;
+  margin: 20px 0;
+}
+
+@media (max-width: 1400px) {
+  .individualAdvertisement button {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 420px) {
+  .individualAdvertisement button {
+    font-size: 1.5em;
+  }
+}
+
+.individualAdvertisement button:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+.individualAdvertisement button:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.individualAdvertisement button a {
+  color: white;
+}
+
+.individualAdvertisement button svg {
+  position: absolute;
+  left: 5%;
+  -webkit-transform: rotate(-60deg) scale(0.8);
+          transform: rotate(-60deg) scale(0.8);
+}
+
+@media (max-width: 1400px) {
+  .individualAdvertisement button svg {
+    top: 19%;
+  }
+}
+
+@media (max-width: 420px) {
+  .individualAdvertisement button svg {
+    top: 24%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .individualAdvertisement button {
+    font-size: .3em;
+  }
+}
+
+@media (max-width: 420px) {
+  .individualAdvertisement button {
+    bottom: 10px;
+    font-size: .5em;
+  }
+}
+
+.advertisements {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: block;
+  opacity: 1;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  margin-top: 0%;
+  z-index: 19;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  top: 11%;
+}
+
+.advertisements .containerAdvertisement {
+  height: 300px;
+  width: 45%;
+  margin: 2.5% 27.5%;
+  background: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 2px 0px 3px #d12a2a;
+          box-shadow: 2px 2px 0px 3px #d12a2a;
+}
+
+@media (max-width: 1400px) {
+  .advertisements .containerAdvertisement {
+    width: 60%;
+    margin: 2.5% 20%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .advertisements .containerAdvertisement {
+    width: 70%;
+    margin: 2.5% 15%;
+  }
+}
+
+@media (max-width: 768px) {
+  .advertisements .containerAdvertisement {
+    width: 90%;
+    margin: 2.5% 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .advertisements .containerAdvertisement {
+    margin: 7% 5%;
+    height: 260px;
+  }
+}
+
+@media (max-width: 420px) {
+  .advertisements .containerAdvertisement {
+    margin: 7% 5%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 320px) {
+  .advertisements .containerAdvertisement {
+    height: 160px;
+  }
+}
+
+.advertisements .containerAdvertisement .rotatedContainer {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-box-shadow: -1px -1px 0px 2px #d12a2a;
+          box-shadow: -1px -1px 0px 2px #d12a2a;
+  margin: 8% 3% 5% 6%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+@media (max-width: 1400px) {
+  .advertisements .containerAdvertisement .rotatedContainer {
+    margin-top: 9%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .advertisements .containerAdvertisement .rotatedContainer {
+    margin-top: 10.5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .advertisements .containerAdvertisement .rotatedContainer {
+    margin-top: 15%;
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@media (max-width: 420px) {
+  .advertisements .containerAdvertisement .rotatedContainer {
+    margin-top: 12%;
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 384px) {
+  .advertisements .containerAdvertisement .rotatedContainer {
+    margin-top: 14%;
+  }
+}
+
+@media (max-width: 320px) {
+  .advertisements .containerAdvertisement .rotatedContainer {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.advertisements .containerAdvertisement .rotatedContainer img {
+  left: -15%;
+  top: -18%;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+@media (max-width: 480px) {
+  .advertisements .containerAdvertisement .rotatedContainer img {
+    height: 169px;
+    width: 169px;
+  }
+}
+
+@media (max-width: 420px) {
+  .advertisements .containerAdvertisement .rotatedContainer img {
+    height: 140px;
+    width: 140px;
+  }
+}
+
+@media (max-width: 320px) {
+  .advertisements .containerAdvertisement .rotatedContainer img {
+    height: 113px;
+    width: 113px;
+  }
+}
+
+.advertisements .containerAdvertisement .text {
+  margin-left: 5%;
+  width: 60%;
+  font-size: 1.2em;
+  color: #333333;
+}
+
+@media (max-width: 480px) {
+  .advertisements .containerAdvertisement .text {
+    width: 50%;
+    font-size: 1.05em;
+  }
+}
+
+@media (max-width: 420px) {
+  .advertisements .containerAdvertisement .text {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 320px) {
+  .advertisements .containerAdvertisement .text {
+    font-size: .8em;
+  }
+}
+
+@media (max-width: 420px) {
+  .advertisements .containerAdvertisement .text p {
+    margin-bottom: 5px;
+  }
+}
+
+.advertisements .containerAdvertisement .text h3 {
+  font-size: 1.6em;
+  text-transform: uppercase;
+  margin-bottom: .5em;
+}
+
+@media (max-width: 480px) {
+  .advertisements .containerAdvertisement .text h3 {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 420px) {
+  .advertisements .containerAdvertisement .text h3 {
+    font-size: 1.1em;
+  }
+}
+
+.advertisements .containerAdvertisement .text h4 {
+  font-size: 1.1em;
+  margin: 0;
+  color: #3b3b3b;
+}
+
+.advertisements .containerAdvertisement .text h4:nth-of-type(1) {
+  margin-top: 2em;
+  margin-bottom: 3px;
+}
+
+@media (max-width: 480px) {
+  .advertisements .containerAdvertisement .text h4:nth-of-type(1) {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .advertisements .containerAdvertisement .text h4 {
+    font-size: .9em;
+  }
+}
+
+.advertisements .containerAdvertisement a {
+  position: absolute;
+  right: 10%;
+  bottom: 20%;
+  background: #d12a2a;
+  color: white;
+  text-decoration: none;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  border-radius: 15px;
+  letter-spacing: 1px;
+}
+
+.advertisements .containerAdvertisement a:hover {
+  background: #e64040;
+}
+
+.advertisements .containerAdvertisement a:active {
+  background: #d12a2a;
+}
+
+@media (max-width: 1024px) {
+  .advertisements .containerAdvertisement a {
+    right: 5%;
+    bottom: 8%;
+  }
+}
+
+@media (max-width: 420px) {
+  .advertisements .containerAdvertisement a {
+    padding: 8px 15px;
+    right: 3%;
+    border-radius: 50px;
+    bottom: 4%;
+  }
+}
+
+.gallery.active,
+.advertisements.active {
   opacity: 0;
   margin-left: -100%;
   -webkit-transform: scale(0);
@@ -222,9 +866,13 @@ header nav a:active {
 
 .gallery .swiper-container img {
   width: 70%;
+  border-radius: 45px;
   height: 720px;
   margin-left: 15%;
-  margin-top: -4%;
+  margin-top: 0%;
+  border: 1px solid #d02626;
+  -webkit-box-shadow: 4px 4px 0px 0px #d02626;
+          box-shadow: 4px 4px 0px 0px #d02626;
   cursor: -webkit-grab;
   cursor: grab;
 }
@@ -245,14 +893,14 @@ header nav a:active {
 @media (max-width: 600px) {
   .gallery .swiper-container img {
     height: 380px;
-    width: 100%;
+    width: 90%;
     margin-top: 0;
-    margin-left: 0%;
+    margin-left: 5%;
   }
 }
 
 .gallery .swiper-pagination {
-  margin-bottom: 3%;
+  margin-bottom: 0%;
 }
 
 @media (max-width: 600px) {
@@ -268,6 +916,13 @@ header nav a:active {
 .gallery .swiper-button-next,
 .gallery .swiper-button-prev {
   color: #d02626;
+}
+
+@media (max-width: 600px) {
+  .gallery .swiper-button-next,
+  .gallery .swiper-button-prev {
+    display: none;
+  }
 }
 
 .part1 {
