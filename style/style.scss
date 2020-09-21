@@ -134,6 +134,31 @@ header{
         text-align: left;
         width: 25%;
         margin-left: 38%;
+        @media (max-width: 800px) {
+           width: 40%;
+           margin-left: 30%;
+         }
+        @media (max-width: 600px) {
+           width: 60%;
+           margin-left: 20%;
+         }
+        @media (max-width: 420px) {
+           width: 80%;
+           margin-left: 8.5%;
+         }
+        @media (max-width: 390px) {
+           width: 85%;
+           margin-left: 7%;
+         }
+        @media (max-width: 375px) {
+           width: 80%;
+           margin-left: 8.5%;
+         }
+        @media (max-width: 320px) {
+           width: 80%;
+           margin-left: 8%;
+         }
+      
         p{
             margin: 10px 0 15px 0;
             box-shadow: -1px 1px 0 0px $red-mcp;
@@ -148,12 +173,52 @@ header{
     .swiper-container{
         height: 500px;
         top: -3%;
+        @media (max-width: 1440px) {
+            height: 400px;
+         }
+        @media (max-width: 420px) {
+            height: 350px;
+            top: -15px;
+         }
+        @media (max-width: 390px) {
+            height: 340px;
+            
+         }
+         @media (max-width: 360px) {
+            height: 320px;
+         }
+         @media (max-width: 320px) {
+            height: 290px;
+            top: -20px;
+         }
+     
     }
     .containercheRotirano{
         @include rotatedContainerMixin(45px, 400px, 550px, 2px);
         @include centering(rotate(0deg));
+        cursor: grab;
         box-shadow: 2px 2px 0px 1px $red-mcp;
         border: 1px solid $red-mcp;
+        @media (max-width: 1440px) {
+            width: 450px;
+            height: 300px;
+         }
+         @media (max-width: 420px) {
+            width: 400px;
+            height: 250px;
+         }
+         @media (max-width: 390px) {
+            width: 360px;
+            height: 250px;
+         }
+         @media (max-width: 360px) {
+            width: 340px;
+            height: 220px;
+         }
+         @media (max-width: 320px) {
+            width: 300px;
+            height: 200px;
+         }
        .content{
            height: 100%;
            width: 100%;
@@ -168,10 +233,34 @@ header{
     .swiper-button-prev{
         color: $red-mcp;
         left:29%;
+        @media (max-width: 1024px) {
+            left: 20%;
+         }
+        @media (max-width: 800px) {
+            left: 15%;
+         }
+        @media (max-width: 600px) {
+            left: 5%;
+         }
+        @media (max-width: 480px) {
+            display: none;
+         }
     }
     .swiper-button-next{
         color: $red-mcp;
         right:29%;
+        @media (max-width: 1024px) {
+            right: 20%;
+         }
+        @media (max-width: 800px) {
+            right: 15%;
+         }
+        @media (max-width: 600px) {
+            right: 5%;
+         }
+        @media (max-width: 480px) {
+            display:none;
+         }
     }
     .swiper-pagination-bullet{
         background: $red-mcp;
@@ -179,11 +268,33 @@ header{
     #advertisementTitle{
         font-size: 3.5em;
         margin-bottom: 0;
+        display: block;
+        @media (max-width: 1440px) {
+            font-size: 3em;
+         }
+        @media (max-width: 480px) {
+            font-size: 2.5em;
+         }
+        @media (max-width: 420px) {
+            font-size: 2em;
+         }
+        @media (max-width: 320px) {
+            font-size: 1.6em;
+         }
+        
     }
   button{
    @include buttonMixin();
    font-size: .3em;
    bottom: 20px;
+   margin: 20px 0;
+   @media (max-width: 1440px) {
+    font-size: .3em;
+ }
+   @media (max-width: 420px) {
+    bottom: 10px;
+    font-size: .5em;
+ }
   }
 }
 .advertisements{
