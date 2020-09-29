@@ -611,8 +611,6 @@ header nav a:active {
   height: 150px;
   width: 150px;
   position: relative;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
   -webkit-box-shadow: -1px -1px 0px 2px #d12a2a;
           box-shadow: -1px -1px 0px 2px #d12a2a;
   margin: 8% 3% 5% 6%;
@@ -662,33 +660,29 @@ header nav a:active {
 }
 
 .advertisements .containerAdvertisement .rotatedContainer img {
-  left: -15%;
-  top: -18%;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   position: absolute;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
 }
 
 @media (max-width: 480px) {
   .advertisements .containerAdvertisement .rotatedContainer img {
-    height: 169px;
-    width: 169px;
+    height: 120px;
+    width: 120px;
   }
 }
 
 @media (max-width: 420px) {
   .advertisements .containerAdvertisement .rotatedContainer img {
-    height: 140px;
-    width: 140px;
+    height: 100px;
+    width: 100px;
   }
 }
 
 @media (max-width: 320px) {
   .advertisements .containerAdvertisement .rotatedContainer img {
-    height: 113px;
-    width: 113px;
+    height: 80px;
+    width: 80px;
   }
 }
 
@@ -696,6 +690,10 @@ header nav a:active {
   margin-left: 5%;
   width: 60%;
   font-size: 1.2em;
+  color: #333333;
+}
+
+.advertisements .containerAdvertisement .text a:active, .advertisements .containerAdvertisement .text a:visited {
   color: #333333;
 }
 
@@ -765,7 +763,7 @@ header nav a:active {
   }
 }
 
-.advertisements .containerAdvertisement a {
+.advertisements .containerAdvertisement .containerAdvertisementsButton {
   position: absolute;
   right: 10%;
   bottom: 20%;
@@ -778,23 +776,23 @@ header nav a:active {
   letter-spacing: 1px;
 }
 
-.advertisements .containerAdvertisement a:hover {
+.advertisements .containerAdvertisement .containerAdvertisementsButton:hover {
   background: #e64040;
 }
 
-.advertisements .containerAdvertisement a:active {
+.advertisements .containerAdvertisement .containerAdvertisementsButton:active {
   background: #d12a2a;
 }
 
 @media (max-width: 1024px) {
-  .advertisements .containerAdvertisement a {
+  .advertisements .containerAdvertisement .containerAdvertisementsButton {
     right: 5%;
     bottom: 8%;
   }
 }
 
 @media (max-width: 420px) {
-  .advertisements .containerAdvertisement a {
+  .advertisements .containerAdvertisement .containerAdvertisementsButton {
     padding: 8px 15px;
     right: 3%;
     border-radius: 50px;

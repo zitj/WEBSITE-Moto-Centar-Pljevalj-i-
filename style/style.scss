@@ -315,6 +315,7 @@ header{
         display: flex;
         border-radius: 30px;
         box-shadow: 2px 2px 0px 3px rgb(209, 42, 42);
+      
         @media (max-width: 1400px) {
               width: 60%;
               margin: 2.5% 20%;
@@ -342,7 +343,6 @@ header{
             height: 150px;
             width: 150px;
             position: relative;
-            transform: rotate(45deg);
             box-shadow: -1px -1px 0px 2px rgb(209, 42, 42);
             margin: 8% 3% 5% 6%;
             border-radius: 20px;
@@ -372,23 +372,21 @@ header{
                  }
            
             img{
-                left: -15%;
-                top: -18%;
-                height: 200px;
-                width: 200px;
+                
+                height: 150px;
+                width: 150px;
                 position: absolute;    
-                transform: rotate(-45deg);
                 @media (max-width: 480px) {
-                    height: 169px;
-                    width: 169px;
+                    height: 120px;
+                    width: 120px;
                      }
                 @media (max-width: 420px) {
-                    height: 140px;
-                    width: 140px;
+                    height: 100px;
+                    width: 100px;
                      }
                 @media (max-width: 320px) {
-                    height: 113px;
-                    width: 113px;
+                    height: 80px;
+                    width: 80px;
                      }     
                
             }
@@ -399,6 +397,13 @@ header{
             width: 60%;
             font-size: 1.2em;
             color: #333333;
+            a{
+                &:active,
+                &:visited{
+                    color: #333333;
+                }
+                
+            }
             @media (max-width: 480px) {
                 width: 50%;
                 font-size: 1.05em;
@@ -443,7 +448,7 @@ header{
                 
             }
         }
-        a{
+        .containerAdvertisementsButton{
             position: absolute;
             right: 10%;
             bottom: 20%;
