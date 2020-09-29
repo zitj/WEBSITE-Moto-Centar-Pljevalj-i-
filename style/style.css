@@ -693,6 +693,10 @@ header nav a:active {
   color: #333333;
 }
 
+.advertisements .containerAdvertisement .text a {
+  color: #333333;
+}
+
 .advertisements .containerAdvertisement .text a:active, .advertisements .containerAdvertisement .text a:visited {
   color: #333333;
 }
