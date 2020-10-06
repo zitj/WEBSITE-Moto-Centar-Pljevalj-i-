@@ -456,82 +456,62 @@ header nav a:active {
 }
 
 .individualAdvertisement button {
-  padding: 10px 15px 10px 30px;
-  font-size: 1.3em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  border-radius: 30px;
-  outline: none;
-  border: none;
+  width: 22%;
+  height: 50px;
+  color: white;
+  font-size: .7em;
+  border-radius: 16px;
   background: -webkit-gradient(linear, left top, left bottom, from(#d02626), to(#b01e1e));
   background: linear-gradient(#d02626, #b01e1e);
-  color: white;
-  position: relative;
-  cursor: pointer;
-  -webkit-transition: .1s ease-in-out;
-  transition: .1s ease-in-out;
-  -webkit-box-shadow: 0px 2px 0px 0px #270101;
-          box-shadow: 0px 2px 0px 0px #270101;
-  font-size: .3em;
+  border: none;
+  border-bottom: 2px solid #620000;
+  border-right: 2px solid #620000;
   bottom: 20px;
   margin: 20px 0;
-}
-
-@media (max-width: 1400px) {
-  .individualAdvertisement button {
-    font-size: 1em;
-  }
-}
-
-@media (max-width: 420px) {
-  .individualAdvertisement button {
-    font-size: 1.5em;
-  }
-}
-
-.individualAdvertisement button:hover {
-  -webkit-transform: scale(1.07);
-          transform: scale(1.07);
-}
-
-.individualAdvertisement button:active {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .individualAdvertisement button a {
   color: white;
 }
 
+.individualAdvertisement button a:visited {
+  color: white;
+}
+
 .individualAdvertisement button svg {
-  position: absolute;
-  left: 5%;
-  -webkit-transform: rotate(-60deg) scale(0.8);
-          transform: rotate(-60deg) scale(0.8);
-}
-
-@media (max-width: 1400px) {
-  .individualAdvertisement button svg {
-    top: 19%;
-  }
-}
-
-@media (max-width: 420px) {
-  .individualAdvertisement button svg {
-    top: 24%;
-  }
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+  margin-bottom: -3px;
+  margin-right: 5px;
+  margin-left: -5px;
 }
 
 @media (max-width: 1440px) {
   .individualAdvertisement button {
-    font-size: .3em;
+    bottom: 10px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 800px) {
+  .individualAdvertisement button {
+    width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .individualAdvertisement button {
+    width: 58%;
   }
 }
 
 @media (max-width: 420px) {
   .individualAdvertisement button {
     bottom: 10px;
-    font-size: .5em;
+    font-size: 1em;
+    width: 80%;
   }
 }
 
@@ -609,13 +589,11 @@ header nav a:active {
 
 .advertisements .containerAdvertisement .rotatedContainer {
   height: 150px;
-  width: 150px;
+  width: 180px;
   position: relative;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
   -webkit-box-shadow: -1px -1px 0px 2px #d12a2a;
           box-shadow: -1px -1px 0px 2px #d12a2a;
-  margin: 8% 3% 5% 6%;
+  margin: 8% 3% 5% 3.5%;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -636,66 +614,43 @@ header nav a:active {
   .advertisements .containerAdvertisement .rotatedContainer {
     margin-top: 15%;
     height: 120px;
-    width: 120px;
+    width: 150px;
   }
 }
 
 @media (max-width: 420px) {
   .advertisements .containerAdvertisement .rotatedContainer {
-    margin-top: 12%;
+    margin-top: 7%;
     height: 100px;
-    width: 100px;
-  }
-}
-
-@media (max-width: 384px) {
-  .advertisements .containerAdvertisement .rotatedContainer {
-    margin-top: 14%;
+    width: 130px;
   }
 }
 
 @media (max-width: 320px) {
   .advertisements .containerAdvertisement .rotatedContainer {
     height: 80px;
-    width: 80px;
+    width: 110px;
   }
 }
 
 .advertisements .containerAdvertisement .rotatedContainer img {
-  left: -15%;
-  top: -18%;
-  height: 200px;
-  width: 200px;
+  height: 100%;
+  width: 100%;
   position: absolute;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-@media (max-width: 480px) {
-  .advertisements .containerAdvertisement .rotatedContainer img {
-    height: 169px;
-    width: 169px;
-  }
-}
-
-@media (max-width: 420px) {
-  .advertisements .containerAdvertisement .rotatedContainer img {
-    height: 140px;
-    width: 140px;
-  }
-}
-
-@media (max-width: 320px) {
-  .advertisements .containerAdvertisement .rotatedContainer img {
-    height: 113px;
-    width: 113px;
-  }
 }
 
 .advertisements .containerAdvertisement .text {
-  margin-left: 5%;
+  margin-left: 1.5%;
   width: 60%;
   font-size: 1.2em;
+  color: #333333;
+}
+
+.advertisements .containerAdvertisement .text a {
+  color: #333333;
+}
+
+.advertisements .containerAdvertisement .text a:active, .advertisements .containerAdvertisement .text a:visited {
   color: #333333;
 }
 
@@ -724,6 +679,12 @@ header nav a:active {
   }
 }
 
+@media (max-width: 420px) {
+  .advertisements .containerAdvertisement .text p {
+    font-size: .9em;
+  }
+}
+
 .advertisements .containerAdvertisement .text h3 {
   font-size: 1.6em;
   text-transform: uppercase;
@@ -738,7 +699,7 @@ header nav a:active {
 
 @media (max-width: 420px) {
   .advertisements .containerAdvertisement .text h3 {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 }
 
@@ -765,7 +726,7 @@ header nav a:active {
   }
 }
 
-.advertisements .containerAdvertisement a {
+.advertisements .containerAdvertisement .containerAdvertisementsButton {
   position: absolute;
   right: 10%;
   bottom: 20%;
@@ -778,26 +739,26 @@ header nav a:active {
   letter-spacing: 1px;
 }
 
-.advertisements .containerAdvertisement a:hover {
+.advertisements .containerAdvertisement .containerAdvertisementsButton:hover {
   background: #e64040;
 }
 
-.advertisements .containerAdvertisement a:active {
+.advertisements .containerAdvertisement .containerAdvertisementsButton:active {
   background: #d12a2a;
 }
 
 @media (max-width: 1024px) {
-  .advertisements .containerAdvertisement a {
+  .advertisements .containerAdvertisement .containerAdvertisementsButton {
     right: 5%;
     bottom: 8%;
   }
 }
 
 @media (max-width: 420px) {
-  .advertisements .containerAdvertisement a {
-    padding: 8px 15px;
-    right: 3%;
-    border-radius: 50px;
+  .advertisements .containerAdvertisement .containerAdvertisementsButton {
+    padding: 3.5% 12%;
+    right: 26%;
+    border-radius: 18px;
     bottom: 4%;
   }
 }
@@ -892,7 +853,7 @@ header nav a:active {
 
 @media (max-width: 600px) {
   .gallery .swiper-container img {
-    height: 380px;
+    height: 290px;
     width: 90%;
     margin-top: 0;
     margin-left: 5%;
@@ -905,7 +866,7 @@ header nav a:active {
 
 @media (max-width: 600px) {
   .gallery .swiper-pagination {
-    margin-bottom: 0%;
+    margin-bottom: 15%;
   }
 }
 

@@ -26,17 +26,22 @@ if(isset($_GET['id'])){
        
 <div class="advertisements">
     <?php foreach($oglasi as $oglas): ?>
-    <div class="containerAdvertisement">
-        <div class="rotatedContainer"><img src="../img/oglasi/<?php echo $oglas['title']?>/1.jpg" alt=""></div><!-- end .rotatedContainer -->
+        <div class="containerAdvertisement">
+            
+        <div class="rotatedContainer"><a href="oglas.php?id=<?php echo $oglas['id']?>"><img src="../img/oglasi/<?php echo $oglas['title']?>/1.jpg" alt=""></a></div><!-- end .rotatedContainer -->
+        
         <div class="text">
-        <h3><?php echo htmlspecialchars($oglas['title']);?></h3>
-        <p><?php echo htmlspecialchars($oglas['descr']);?></p>
+            <h3> <?php echo htmlspecialchars($oglas['title']);?></h3>
+        <a href="oglas.php?id=<?php echo $oglas['id']?>">
+        <p> <?php echo htmlspecialchars($oglas['descr']);?></p>
         <h4>godište: <?php echo htmlspecialchars($oglas['godiste']);?> god</h4>
         <h4>cena: <?php echo htmlspecialchars($oglas['price']);?> &euro;</h4>
+        </a>
         </div><!-- end .text -->
         <a class="containerAdvertisementsButton"href="oglas.php?id=<?php echo $oglas['id']?>">detalji</a>
-        
+    
     </div><!-- end .container -->
+    
     <?php endforeach; ?>   
     </div><!-- end .advertisements -->
 
