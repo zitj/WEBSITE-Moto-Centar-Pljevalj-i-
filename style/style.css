@@ -570,7 +570,7 @@ header nav a:active {
   position: relative;
   -webkit-box-shadow: -1px -1px 0px 2px #d12a2a;
           box-shadow: -1px -1px 0px 2px #d12a2a;
-  margin: 8% 3% 5% 6%;
+  margin: 8% 3% 5% 3.5%;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -662,6 +662,12 @@ header nav a:active {
   }
 }
 
+@media (max-width: 420px) {
+  .advertisements .containerAdvertisement .text p {
+    font-size: .9em;
+  }
+}
+
 .advertisements .containerAdvertisement .text h3 {
   font-size: 1.6em;
   text-transform: uppercase;
@@ -676,7 +682,7 @@ header nav a:active {
 
 @media (max-width: 420px) {
   .advertisements .containerAdvertisement .text h3 {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 }
 
