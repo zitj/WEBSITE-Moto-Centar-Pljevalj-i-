@@ -1,5 +1,7 @@
-html, body {
+html,
+body {
   max-width: 100%;
+  height: calc(100% - 70px);
 }
 
 html {
@@ -68,8 +70,8 @@ header nav a {
   text-transform: uppercase;
   border-radius: 13px;
   line-height: 10px;
-  -webkit-transition: .1s ease-in-out;
-  transition: .1s ease-in-out;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 @media (max-width: 420px) {
@@ -84,7 +86,7 @@ header nav a:hover {
 }
 
 header nav a:active {
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .center {
@@ -149,7 +151,9 @@ header nav a:active {
 .part4 {
   display: block;
   opacity: 0;
-  height: 95vh;
+  height: 100vh;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
 .part1.active,
@@ -172,8 +176,8 @@ header nav a:active {
   position: fixed;
   display: block;
   opacity: 1;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
   margin-top: 0%;
   z-index: 19;
   -webkit-transform: scale(1);
@@ -275,6 +279,8 @@ header nav a:active {
 }
 
 .part1 .motorcycle {
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
   height: 300px;
   width: 600px;
   margin-bottom: 1em;
@@ -295,6 +301,10 @@ header nav a:active {
 }
 
 .part1 h1 {
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  -webkit-animation: slideIn 0.4s ease-in-out;
+          animation: slideIn 0.4s ease-in-out;
   margin: 0;
 }
 
@@ -326,6 +336,10 @@ header nav a:active {
 
 .part1 h4 {
   margin: 10px 0px 25px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  -webkit-animation: slideIn 0.4s ease-in-out;
+          animation: slideIn 0.4s ease-in-out;
 }
 
 .part1 button {
@@ -341,8 +355,8 @@ header nav a:active {
   color: white;
   position: relative;
   cursor: pointer;
-  -webkit-transition: .1s ease-in-out;
-  transition: .1s ease-in-out;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
   -webkit-box-shadow: 0px 2px 0px 0px #270101;
           box-shadow: 0px 2px 0px 0px #270101;
 }
@@ -407,6 +421,8 @@ header nav a:active {
   width: 200px;
   -webkit-box-shadow: -3px -3px 0px 0px #620000;
           box-shadow: -3px -3px 0px 0px #620000;
+  -webkit-transition: 0.6 ease-in-out;
+  transition: 0.6 ease-in-out;
 }
 
 @media (max-width: 1400px) {
@@ -450,7 +466,9 @@ header nav a:active {
   left: -120%;
   top: 40%;
   font-size: 6em;
-  opacity: .1;
+  opacity: 0.1;
+  -webkit-transition: 2 ease-in-out;
+  transition: 2 ease-in-out;
 }
 
 @media (max-width: 1400px) {
@@ -482,7 +500,7 @@ header nav a:active {
 
 @media (max-width: 1400px) {
   .part2 .rotatedContainer .content p {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 }
 
@@ -502,7 +520,7 @@ header nav a:active {
 
 .part3 {
   position: relative;
-  height: 110vh;
+  height: 100vh;
 }
 
 .part3 .rotatedContainer {
@@ -516,6 +534,8 @@ header nav a:active {
   width: 450px;
   -webkit-box-shadow: 3px 3px 0px 0px #620000;
           box-shadow: 3px 3px 0px 0px #620000;
+  -webkit-transition: 0.6 ease-in-out;
+  transition: 0.6 ease-in-out;
   background: #620000;
   overflow: hidden;
 }
@@ -557,7 +577,13 @@ header nav a:active {
 }
 
 .part3 .content iframe {
-  opacity: .95;
+  opacity: 0.95;
+}
+
+.part3 .text {
+  opacity: 1;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
 .part3 .text h2 {
@@ -566,7 +592,7 @@ header nav a:active {
   position: absolute;
   top: -24%;
   left: 46%;
-  opacity: .2;
+  opacity: 0.2;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -631,6 +657,8 @@ header nav a:active {
   width: 450px;
   -webkit-box-shadow: 4px 4px 0px 0px #620000;
           box-shadow: 4px 4px 0px 0px #620000;
+  -webkit-transition: 0.6 ease-in-out;
+  transition: 0.6 ease-in-out;
   color: white;
 }
 
@@ -655,7 +683,7 @@ header nav a:active {
   left: -70%;
   top: 20%;
   font-size: 6em;
-  opacity: .1;
+  opacity: 0.1;
   color: black;
 }
 
@@ -708,15 +736,91 @@ header nav a:active {
 
 .part4 .content svg {
   cursor: pointer;
-  -webkit-transition: .1s ease-in-out;
-  transition: .1s ease-in-out;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 .part4 .content svg:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .part4 .content svg:active {
   opacity: 1;
+}
+
+@-webkit-keyframes animateIn {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0);
+            transform: rotate(0deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(45deg) scale(1);
+            transform: rotate(45deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes animateIn {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0);
+            transform: rotate(0deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(45deg) scale(1);
+            transform: rotate(45deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */

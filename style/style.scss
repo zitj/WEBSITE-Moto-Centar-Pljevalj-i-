@@ -1,84 +1,85 @@
-@import "include-media.scss"; 
-@import "./mixins";
-@import "./variables";
+@import 'include-media.scss';
+@import './mixins';
+@import './variables';
 
-html, body {
+html,
+body {
     max-width: 100%;
+    height: calc(100% - 70px);
 }
 html {
     scroll-behavior: smooth;
-  }
-body{
+}
+body {
     margin: 0;
-    padding:0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-a{
+a {
     text-decoration: none;
 }
-header{
-    position:fixed;
-    background:$red-gradient;
+header {
+    position: fixed;
+    background: $red-gradient;
     height: 70px;
     width: 100%;
     z-index: 20;
 
-   nav.center{
-    @media (max-width: 940px) {
-        width: 80%;
-        left: 53%;
+    nav.center {
+        @media (max-width: 940px) {
+            width: 80%;
+            left: 53%;
         }
-    @media (max-width: 700px) {
-        left: 50%;
+        @media (max-width: 700px) {
+            left: 50%;
         }
-    @media (max-width: 560px) {
-        width: 100%;
+        @media (max-width: 560px) {
+            width: 100%;
         }
-    @media (max-width: 420px){
-        left: 50%;
-        top: 50%;
-        }   
-   }
-    nav{
-        width:40%;
+        @media (max-width: 420px) {
+            left: 50%;
+            top: 50%;
+        }
+    }
+    nav {
+        width: 40%;
         display: flex;
         justify-content: space-around;
-                a{
-                    color: white;
-                    letter-spacing: 1px;
-                    text-decoration: none;
-                    padding: 15px 20px;
-                    text-transform: uppercase;
-                    border-radius: 13px;
-                    line-height: 10px;
-                    transition: .1s ease-in-out;
-                    @media (max-width: 420px) {
-                        padding: 15px 10px;
-                        }
-                    &:hover{
-                        background: white;
-                        color: $red-mcp;
-                    }
-                    &:active{
-                        opacity: .9;
-                    }
-                }
+        a {
+            color: white;
+            letter-spacing: 1px;
+            text-decoration: none;
+            padding: 15px 20px;
+            text-transform: uppercase;
+            border-radius: 13px;
+            line-height: 10px;
+            transition: 0.1s ease-in-out;
+            @media (max-width: 420px) {
+                padding: 15px 10px;
+            }
+            &:hover {
+                background: white;
+                color: $red-mcp;
+            }
+            &:active {
+                opacity: 0.9;
             }
         }
-.center{
+    }
+}
+.center {
     @include centering(rotate(0deg));
     text-align: center;
     @media (max-width: 420px) {
-        left:70%;
-        top:65%;
-     }
+        left: 70%;
+        top: 65%;
+    }
     @media (max-width: 320px) {
-        left:75%;
-        top:65%;
-     }
-  
+        left: 75%;
+        top: 65%;
+    }
 }
-.close-button{
+.close-button {
     height: 80px;
     width: 80px;
     cursor: pointer;
@@ -89,35 +90,36 @@ header{
 
     @media (max-width: 1400px) {
         top: 10%;
-        right:10%;
-     }
+        right: 10%;
+    }
     @media (max-width: 800px) {
         top: 16%;
-        right:10%;
-     }
+        right: 10%;
+    }
     @media (max-width: 600px) {
         top: 22%;
         right: 2%;
-        transform: scale(.8);
-     }
-    
+        transform: scale(0.8);
+    }
 }
 .part1,
 .part2,
 .part3,
-.part4{
+.part4 {
     display: block;
     opacity: 0;
-    height: 95vh;
+    height: 100vh;
+    transition: 0.6s ease-in-out;
+    // animation: animateIn 0.6s ease-in-out;
 }
 
 .part1.active,
 .part2.active,
 .part3.active,
-.part4.active{
+.part4.active {
     opacity: 1;
 }
-.gallery.active{
+.gallery.active {
     opacity: 0;
     margin-left: -100%;
     transform: scale(0);
@@ -128,113 +130,115 @@ header{
     position: fixed;
     display: block;
     opacity: 1;
-    transition: .2s ease-in-out;
+    transition: 0.2s ease-in-out;
     margin-top: 0%;
     z-index: 19;
-    transform:  scale(1);
+    transform: scale(1);
     perspective: 1000px;
     .swiper-container {
         top: 15%;
-        width:90%;
+        width: 90%;
         height: 800px;
         @media (max-width: 1400px) {
-            top:15%;
-            height:600px;
+            top: 15%;
+            height: 600px;
         }
         @media (max-width: 900px) {
-            height:450px;
+            height: 450px;
         }
         @media (max-width: 800px) {
             top: 25%;
         }
         @media (max-width: 600px) {
-            height:430px;
+            height: 430px;
             top: 30%;
         }
         @media (max-width: 420px) {
             top: 40%;
         }
-      
-       
-        img{
+
+        img {
             width: 70%;
-            height:720px;
+            height: 720px;
             margin-left: 15%;
             margin-top: -4%;
             cursor: grab;
             @media (max-width: 1400px) {
                 width: 70%;
-                height:550px;
+                height: 550px;
             }
             @media (max-width: 900px) {
-                height:400px;
+                height: 400px;
             }
             @media (max-width: 600px) {
-                height:380px;
+                height: 380px;
                 width: 100%;
                 margin-top: 0;
                 margin-left: 0%;
             }
         }
-        
     }
-    .swiper-pagination{
+    .swiper-pagination {
         margin-bottom: 3%;
         @media (max-width: 600px) {
             margin-bottom: 0%;
         }
     }
-    .swiper-pagination-bullet{
-       background: $red-mcp;
+    .swiper-pagination-bullet {
+        background: $red-mcp;
     }
-     .swiper-button-next,
-     .swiper-button-prev{
+    .swiper-button-next,
+    .swiper-button-prev {
         color: $red-mcp;
     }
 }
 
-.part1{
-    
+.part1 {
     width: 100%;
-  
-    .motorcycle{
+
+    .motorcycle {
+        transition: 0.4s ease-in-out;
         height: 300px;
         width: 600px;
         margin-bottom: 1em;
         @media (max-width: 1400px) {
-        height: 200px;
-        width:500px;
-    }
+            height: 200px;
+            width: 500px;
+        }
         @media (max-width: 420px) {
-        height: 160px;
-        width:400px;
+            height: 160px;
+            width: 400px;
+        }
     }
-    }
-    h1{
+    h1 {
+        transition: 0.4s ease-in-out;
+        animation: slideIn 0.4s ease-in-out;
         margin: 0;
-        &:nth-of-type(1){
-            span{
-            color: $red-mcp;
+        &:nth-of-type(1) {
+            span {
+                color: $red-mcp;
             }
             font-size: 5em;
             @media (max-width: 1400px) {
                 font-size: 4em;
             }
         }
-        &:nth-of-type(2){
+        &:nth-of-type(2) {
             color: $grey-mcp;
             font-size: 3.5em;
             margin-top: -8px;
             @media (max-width: 1400px) {
-            font-size: 3.3em;
+                font-size: 3.3em;
             }
         }
     }
-    h4{
+    h4 {
         margin: 10px 0px 25px;
+        transition: 0.4s ease-in-out;
+        animation: slideIn 0.4s ease-in-out;
     }
-    button{
-        padding:10px 15px 10px 30px;
+    button {
+        padding: 10px 15px 10px 30px;
         font-size: 1.3em;
         text-transform: uppercase;
         letter-spacing: 2px;
@@ -242,121 +246,121 @@ header{
         outline: none;
         border: none;
         background: $red-gradient;
-        color:white;
+        color: white;
         position: relative;
         cursor: pointer;
-        transition: .1s ease-in-out;
+        transition: 0.1s ease-in-out;
         box-shadow: 0px 2px 0px 0px $shadow;
         @media (max-width: 1400px) {
             font-size: 1em;
-            }
+        }
         @media (max-width: 420px) {
             font-size: 1.5em;
-            }
-        &:hover{
+        }
+        &:hover {
             transform: scale(1.07);
         }
-        &:active{
+        &:active {
             transform: scale(1);
         }
-        a{
+        a {
             color: white;
         }
-        svg{
+        svg {
             position: absolute;
             left: 5%;
-            transform: rotate(-60deg) scale(.8);
+            transform: rotate(-60deg) scale(0.8);
             @media (max-width: 1400px) {
                 top: 19%;
-                }
+            }
             @media (max-width: 420px) {
                 top: 24%;
-                }
+            }
         }
     }
 }
-.part2{
+.part2 {
     position: relative;
-    .rotatedContainer{
+    .rotatedContainer {
         @include rotatedContainerMixin(13px, 200px, 200px, -3px);
         @media (max-width: 1400px) {
             height: 160px;
             width: 160px;
-            }
+        }
         @media (max-width: 420px) {
             height: 140px;
             width: 140px;
-            }
-        &:nth-of-type(2){
+        }
+        &:nth-of-type(2) {
             margin-left: -80%;
             margin-top: -20%;
             box-shadow: -3px 3px 0px 0px$burgendy-shadow;
         }
-        &:nth-of-type(3){
-           margin-left: 80%;
-           margin-top: -100%;
-           box-shadow: 3px -3px 0px 0px $burgendy-shadow;
+        &:nth-of-type(3) {
+            margin-left: 80%;
+            margin-top: -100%;
+            box-shadow: 3px -3px 0px 0px $burgendy-shadow;
         }
-        &:nth-of-type(4){
-           margin-top: -20%;
-           box-shadow: 3px 3px 0px 0px $burgendy-shadow;
+        &:nth-of-type(4) {
+            margin-top: -20%;
+            box-shadow: 3px 3px 0px 0px $burgendy-shadow;
         }
-        h2{
+        h2 {
             position: absolute;
             transform: rotate(-90deg);
             left: -120%;
             top: 40%;
             font-size: 6em;
-            opacity: .1;
+            opacity: 0.1;
+            transition: 2 ease-in-out;
             @media (max-width: 1400px) {
                 font-size: 5em;
-                }
+            }
             @media (max-width: 420px) {
                 font-size: 4.3em;
-                }
+            }
         }
-        .content{
+        .content {
             @include centering(rotate(-45deg));
-            p{
+            p {
                 color: white;
                 text-transform: uppercase;
-                margin:5px 0 0 0;
+                margin: 5px 0 0 0;
                 letter-spacing: 1px;
                 @media (max-width: 1400px) {
-                    font-size: .8em;
-                    }
+                    font-size: 0.8em;
+                }
             }
-            svg{
+            svg {
                 @media (max-width: 1400px) {
                     height: 80px;
                     width: 80px;
-                    }
+                }
                 @media (max-width: 1400px) {
                     height: 64px;
                     width: 64px;
-                    }
+                }
             }
         }
     }
 }
-.part3{
-    
+.part3 {
     position: relative;
-    height: 110vh;
-    .rotatedContainer{
+    height: 100vh;
+    .rotatedContainer {
         @include rotatedContainerMixin(16px, 450px, 450px, 3px);
         background: $burgendy-shadow;
         overflow: hidden;
         @media (max-width: 1400px) {
             height: 370px;
             width: 370px;
-            }
+        }
         @media (max-width: 420px) {
             height: 310px;
             width: 310px;
-            }
+        }
     }
-    .content{
+    .content {
         transform: rotate(-45deg);
         position: absolute;
         top: -20%;
@@ -364,126 +368,167 @@ header{
         background: rgba(255, 0, 0, 0.52);
         @media (max-width: 1400px) {
             top: -30%;
-            }
+        }
         @media (max-width: 420px) {
             top: -40%;
             left: -55%;
-            }
-        iframe{
-            opacity: .95;
+        }
+        iframe {
+            opacity: 0.95;
         }
     }
-    .text{
-        h2{
+    .text {
+        opacity: 1;
+        transition: 0.6s ease-in-out;
+        h2 {
             font-size: 5.5em;
             color: red;
             position: absolute;
             top: -24%;
             left: 46%;
-            opacity: .2;
+            opacity: 0.2;
             transform: rotate(45deg);
             @media (max-width: 1400px) {
                 font-size: 4.5em;
-                }
+            }
             @media (max-width: 420px) {
                 font-size: 3.66em;
-                }
-                
+            }
         }
-        p{
+        p {
             font-size: 1.6em;
             color: $red-mcp;
             font-weight: bold;
             position: absolute;
             @media (max-width: 1400px) {
                 font-size: 1.3em;
-                }
+            }
             @media (max-width: 420px) {
                 font-size: 1.1em;
-                }
-            &:nth-of-type(1){
-            top:2%;
-            left: -33%;
-            transform: rotate(-45deg);    
             }
-            &:nth-of-type(2){
-            bottom:2%;
-            right: -13%;
-            transform: rotate(-45deg);    
+            &:nth-of-type(1) {
+                top: 2%;
+                left: -33%;
+                transform: rotate(-45deg);
+            }
+            &:nth-of-type(2) {
+                bottom: 2%;
+                right: -13%;
+                transform: rotate(-45deg);
             }
         }
     }
-   
 }
-.part4{
+.part4 {
     position: relative;
-    .rotatedContainer{
+    .rotatedContainer {
         @include rotatedContainerMixin(16px, 450px, 450px, 4px);
         color: white;
         @media (max-width: 1400px) {
             height: 370px;
             width: 370px;
-            }
+        }
         @media (max-width: 420px) {
             height: 310px;
             width: 310px;
-            }
-        h2{
+        }
+        h2 {
             position: absolute;
             transform: rotate(-90deg);
             left: -70%;
             top: 20%;
             font-size: 6em;
-            opacity: .1;
+            opacity: 0.1;
             color: black;
             @media (max-width: 1400px) {
                 font-size: 5em;
                 left: -68%;
-                }
+            }
             @media (max-width: 420px) {
                 font-size: 3.8em;
                 left: -59%;
                 top: 21%;
-                }
+            }
         }
     }
-    .content{
+    .content {
         @include centering(rotate(-45deg));
-        p{
+        p {
             letter-spacing: 1px;
             font-size: 1.4em;
             font-weight: 500;
-         
-            &:nth-of-type(2){
+
+            &:nth-of-type(2) {
                 font-size: 1.2em;
             }
             &:nth-of-type(1),
             &:nth-of-type(3),
-            &:nth-of-type(4){
-                margin-bottom:3px;
+            &:nth-of-type(4) {
+                margin-bottom: 3px;
             }
             &:nth-of-type(2),
             &:nth-of-type(4),
-            &:nth-of-type(5){
+            &:nth-of-type(5) {
                 margin-top: 0;
             }
             &:nth-of-type(3),
             &:nth-of-type(4),
-            &:nth-of-type(5){
+            &:nth-of-type(5) {
                 @media (max-width: 420px) {
                     font-size: 1.1em;
-                    }
+                }
             }
         }
-        svg{
+        svg {
             cursor: pointer;
-            transition: .1s ease-in-out;
-            &:hover{
-                opacity: .8;
+            transition: 0.1s ease-in-out;
+            &:hover {
+                opacity: 0.8;
             }
-            &:active{
+            &:active {
                 opacity: 1;
             }
         }
     }
+}
+
+@keyframes animateIn {
+    0% {
+        transform: rotate(0deg) scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(45deg) scale(1);
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 420px) {
+    // .part1,
+    // .part2,
+    // .part3,
+    // .part4 {
+    // }
 }
